@@ -31,7 +31,7 @@
 - [Android APK](#-android-apk)
 - [FAQ](#-faq)
 - [한국어 안내](#-한국어-안내)
-- [The real Dokdo island](#-the-real-dokdo-island)
+- [History of the real Dokdo island](#-history-of-the-real-dokdo-island)
 - [Community](#-community)
 - [Disclaimer](#%EF%B8%8F-disclaimer)
 
@@ -212,9 +212,57 @@ Zzoo와 관련이 없는 비공식 팬 복원 프로젝트입니다.
 
 ---
 
-## 🗺️ The real Dokdo island
+## 🌅 History of the real Dokdo island
 
-The game is named after **Dokdo (독도)**, a real group of islands in the East Sea. The gameplay demo opens with a reconstruction of Dokdo before the voyage moves into the game world. According to the [Ministry of Foreign Affairs, Republic of Korea](https://dokdo.mofa.go.kr/eng/), Dokdo consists of two main islands, **Dongdo** and **Seodo**, plus 89 surrounding islets.
+The game takes its name from **Dokdo (독도, 獨島, "solitary island")**, Korea's easternmost territory in the East Sea. The gameplay demo even opens with a reconstruction of the islets before the voyage begins.
+
+<p align="center">
+  <img src="screenshots/dokdo-war-memorial-seoul.jpg" alt="Model of Dokdo at the War Memorial of Korea in Seoul" width="800">
+  <br>
+  <em>A model of Dokdo displayed at the War Memorial of Korea in Seoul, with the sign "대한민국의 아름다운 영토, 독도 — Dokdo, Beautiful Island of Korea". Photo by the repo author.</em>
+</p>
+
+### 🧭 Geography
+
+Dokdo belongs to **Dokdo-ri, Ulleung-eup, Ulleung County, Gyeongsangbuk-do** (North Gyeongsang Province). It is made up of two main islands, **Dongdo** (East Islet) and **Seodo** (West Islet), about 151 m apart, plus **89 smaller islets and rocks**. The total area is about 187,554 m², and the highest point is 168.5 m on Seodo. The islets are volcanic, formed roughly 4.5 million years ago. Dokdo lies 87.4 km from Ulleungdo, the nearest Korean island, and on a clear day it can be seen from there with the naked eye. It is a protected Natural Monument (No. 336, 1982) and a breeding ground for seabirds such as black-tailed gulls and storm petrels.
+
+### 📜 Timeline
+
+| Year | Event |
+| --- | --- |
+| **512** | General **Isabu** of the Silla kingdom subjugates **Usan-guk**, the island state of Ulleungdo and Dokdo. The *Samguk Sagi* (1145) records the conquest, and Korea dates its sovereignty over Dokdo from it. |
+| **1454** | The ***Sejong Sillok Jiriji***, the geography section of the Annals of King Sejong, places Usan (Dokdo) and Mureung (Ulleungdo) under Uljin County and notes that the two islands "are not far apart… [and] can be seen from each other on a clear day." |
+| **1693–1696** | The fisherman **An Yong-bok** is abducted by Japanese fishermen on Ulleungdo in 1693, sparking the "Ulleungdo Dispute" between Joseon and Japan. On his 1696 trip to Japan he told officials that Ulleungdo and Dokdo (Jasando) belonged to Korea. In January 1696 the Tokugawa shogunate banned Japanese voyages to Ulleungdo. |
+| **1770** | The *Dongguk Munheon Bigo* records that "Ulleung and Usan are both territories of Usan-guk, and Usan is what Japan calls Matsushima." |
+| **1900** | On October 25, Emperor Gojong approves **Imperial Ordinance (Decree) No. 41** of the Korean Empire, published on October 27. It renames Ulleungdo as Uldo County and puts "all of Ulleungdo, Jukdo and **Seokdo [Dokdo]**" under its jurisdiction. |
+| **1905** | During the Russo-Japanese War, Japan incorporates the islets into Shimane Prefecture through **Shimane Prefecture Public Notice No. 40**. Korea sees this as the first step in Japan's takeover of Korea, which ended in annexation in 1910. |
+| **1946** | After Japan's defeat in World War II, the Allied occupation's **SCAPIN 677** separates Dokdo from Japanese administration, and SCAPIN 1033 bars Japanese ships from coming within 12 nautical miles of it. |
+| **1953–1956** | Ulleungdo residents led by Korean War veteran **Hong Sun-chil** form the **Dokdo Volunteer Garrison** and drive off Japanese patrol boats. From August 1954 police are stationed on Dongdo alongside a guard post and lighthouse. In 1956 the volunteers hand the guard duty over to the police. |
+| **1954–today** | Korea has administered Dokdo continuously since then. The **Dokdo Security Police** live on the islets, the **Korea Coast Guard** patrols the waters, and lighthouse keepers and Ulleung County officials also live there. Tourists can visit by ferry from Ulleungdo when the weather allows. |
+| **2000 / 2010** | Civic groups proclaim **October 25** as **Dokdo Day (독도의 날)** in 2000, marking the 1900 ordinance. Ulleung County made it official in 2010. |
+
+### 🇰🇷 Dokdo in Korea today
+
+For Koreans, Dokdo is more than two rocks at sea. It stands for sovereignty restored after Japanese colonial rule. The Korean government's position is that Dokdo is "an integral part of Korean territory, historically, geographically and under international law," and that no territorial dispute exists. Dokdo shows up in school lessons, museums like the War Memorial of Korea and the Dokdo Museum on Ulleungdo, songs ("독도는 우리 땅", *Dokdo Is Our Land*), and nationwide events every year on Dokdo Day, **October 25**.
+
+> **Note:** Japan claims the islets under the name **Takeshima**. They are also called the Liancourt Rocks, after a French whaling ship that nearly wrecked there in 1849.
+
+### 🎬 Watch: the story in ten minutes
+
+[![The strangest Island Dispute you've probably never heard about](https://img.youtube.com/vi/2oLwsrIJdJQ/hqdefault.jpg)](https://youtu.be/2oLwsrIJdJQ)
+
+▶️ [**The strangest Island Dispute you've probably never heard about**](https://youtu.be/2oLwsrIJdJQ) by Politics with Paint
+
+### 📚 Sources
+
+- [Dokdo, Beautiful Island of Korea](https://dokdo.mofa.go.kr/eng/), Ministry of Foreign Affairs, Republic of Korea
+- [Q&A on Dokdo](https://dokdo.mofa.go.kr/eng/dokdo/faq.jsp) (Sejong Sillok Jiriji, An Yong-bok, Imperial Decree No. 41), MOFA
+- [Dokdo history timeline](https://dokdo.mofa.go.kr/m/eng/dokdo/reason_list.jsp) (512 to SCAPIN 677/1033), MOFA
+- [*Samguk Sagi* entry on Isabu and Usan-guk](https://db.history.go.kr/id/sg_044r_0050_0030), National Institute of Korean History database
+- [Dokdo: The Start of the Korean Peninsula](https://www.korea.net/FILE/pdfdata/2016/02/StartoftheKoreanPeninsulaDokdo_en_20160216.pdf) (Dokdo Volunteer Guard, police and coast guard), Korea.net / Gyeongsangbuk-do
+- [독도의용수비대 (Dokdo Volunteer Garrison)](https://encykorea.aks.ac.kr/Contents/Item/E0073512), Encyclopedia of Korean Culture, Academy of Korean Studies
+- [Why is Dokdo Day October 25?](https://www.korea.kr/news/policyNewsView.do?newsId=148879058) (in Korean), Korea.kr policy briefing
+- [Liancourt Rocks](https://en.wikipedia.org/wiki/Liancourt_Rocks) (geography figures), Wikipedia
 
 ---
 
