@@ -3,10 +3,31 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 import zipfile
 import publication as p
 
 class PublicationTests(unittest.TestCase):
+    def test_export_rejects_forbidden_credentials_links_and_mismatches(self):
+        spec=importlib.util.spec_from_file_location('export_source',Path(__file__).with_name('export-source.py'))
+        module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+        for name,blob,mode,digest in [
+            ('Assets/.env',b'harmless','100644',None),
+            ('Assets/value.txt',b'gh'+b'p_'+b'x'*36,'100644',None),
+            ('Assets/link',b'target','120000',None),
+            ('Assets/value.txt',b'changed','100644','0'*64),
+        ]:
+            with tempfile.TemporaryDirectory() as tmp:
+                root=Path(tmp); allow=root/'allow.json'
+                p.write_json(allow,{'source_tag':'fixture','source_commit':'abc','files':{name:digest or p.sha(blob)}})
+                def command(args,**kwargs):
+                    if 'rev-parse' in args:return 'abc\n'
+                    if 'ls-tree' in args:return mode+' blob abc\t'+name+'\n'
+                    return blob
+                with patch.object(module.subprocess,'check_output',side_effect=command), patch.object(module.subprocess,'run'):
+                    with self.assertRaises(ValueError):module.export(root,root/'out',allow)
+                    self.assertFalse((root/'out').exists())
+
     def test_forbidden_files_and_credentials(self):
         for name in ['secrets/value.txt', 'Library/asset', '../escape', '/absolute',
                      'Assets/key.p12', 'Assets/Promo/capture.cs', 'Assets/.env']:

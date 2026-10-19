@@ -17,7 +17,7 @@ def run(args):
             'websockets':[],'console_errors':[],'checks':{}}
     with sync_playwright() as playwright:
         kind=getattr(playwright,args.browser)
-        options={'headless':True}
+        options={'headless':not args.headed}
         if args.executable: options['executable_path']=args.executable
         if args.browser=='chromium': options['args']=['--no-sandbox','--enable-unsafe-swiftshader','--use-angle=swiftshader']
         else: options['firefox_user_prefs']={'webgl.force-enabled':True,'webgl.out-of-process':False}
@@ -104,5 +104,6 @@ if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('url');p.add_argument('--browser',choices=['chromium','firefox'],default='chromium')
     p.add_argument('--executable');p.add_argument('--stub',action='store_true')
+    p.add_argument('--headed',action='store_true',help='Use a real or virtual display for WebGL')
     p.add_argument('--output',default='.artifacts/browser')
     run(p.parse_args())

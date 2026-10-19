@@ -71,6 +71,9 @@ def inventory():
 
 def audit():
     expected = json.loads((ROOT/INVENTORY).read_text())['files']
+    roots={'Assets','Packages','ProjectSettings','ThirdParty','docs','tool','.github','screenshots'}
+    root_files={'README.md','THIRD_PARTY_NOTICES.md','.gitignore','.gitleaks.toml','dokdo-1.16.6-r1.apk'}
+    require(all(name in root_files or PurePosixPath(name).parts[0] in roots for name in expected), 'Unexpected source root')
     require(file_hashes(ROOT, source_files()) == expected, 'Source inventory differs; review every change before refreshing it')
     require(not (ROOT/'.git/objects/info/alternates').exists(), 'Shared Git object storage is forbidden')
     require(not git('ls-files', '--stage').startswith('160000'), 'Submodules are forbidden')
@@ -117,6 +120,7 @@ def build():
                'unity': UNITY, 'files': files, 'compile': 'passed', 'editmode': 'passed'})
 
 def payload_hashes(root):
+    require(root.is_dir() and not root.is_symlink(), 'Player directory is missing or a symlink')
     names=[]
     for p in root.rglob('*'):
         require(not p.is_symlink(), 'Payload contains symlink')
@@ -171,6 +175,8 @@ def package(acceptance_path=None):
     print('Created '+str(directory))
 
 def verify(directory):
+    require(directory.is_dir() and not directory.is_symlink(), 'Release directory is missing or a symlink')
+    require(all(p.is_file() and not p.is_symlink() for p in directory.iterdir()), 'Release must contain only regular files')
     manifest=json.loads((directory/'publication.json').read_text())
     expected=set(manifest['artifacts']) | {'publication.json','SHA256SUMS'}
     require({p.name for p in directory.iterdir()} == expected, 'Unexpected release contents')
