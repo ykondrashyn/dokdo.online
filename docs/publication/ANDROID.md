@@ -129,8 +129,25 @@ it does not qualify an application for an app store.
 
 ## Validation and troubleshooting
 
-Android build verification results are recorded here after the first clean
-build. Physical device acceptance remains separate: test startup, touch
+On 2026-10-19, public build commit
+`9fc34de801774e8238347ab8ed2b0f46cd637fb7` passed the command-line workflow in
+a separate clean Linux checkout with the private workspace inaccessible:
+
+- Android-target compilation, 82 EditMode tests and 2 PlayMode tests passed.
+- The ARM64 APK build finished with zero build errors. The first attempt
+  exposed a recovered soft-particle shader error; this commit fixes it.
+- Android SDK tools verified APK signing, 16 KiB ZIP alignment, package ID,
+  version, ARM64 architecture, minimum API 25 and target API 36.
+- The generated manifest requests no permissions, including no Internet
+  permission. Private-identifier checks over all 104 APK entries passed.
+- Source audits and 13 tooling tests passed. No phone was connected, so
+  installation and physical-device behavior remain unverified. The Unity
+  menu workflow has not been separately exercised on Windows or macOS.
+
+Legacy/compressed app-icon warnings remain, and Editor tests report inherited
+lighting-data warnings. Check the visuals on the intended device.
+
+Physical device acceptance remains separate: test startup, touch
 steering, docking/combat, upgrades, audio/settings, Android Back, safe areas,
 background/resume, force-stop/relaunch persistence, save export/import,
 corrupt-save rejection and backup recovery. Inspect `adb logcat` for errors
