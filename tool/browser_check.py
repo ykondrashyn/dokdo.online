@@ -20,6 +20,7 @@ def run(args):
         options={'headless':True}
         if args.executable: options['executable_path']=args.executable
         if args.browser=='chromium': options['args']=['--no-sandbox','--enable-unsafe-swiftshader','--use-angle=swiftshader']
+        else: options['firefox_user_prefs']={'webgl.force-enabled':True,'webgl.out-of-process':False}
         browser=kind.launch(**options)
         context=browser.new_context(viewport={'width':720,'height':1000})
         page=context.new_page()
@@ -28,6 +29,11 @@ def run(args):
         page.on('pageerror',lambda error: record['console_errors'].append(str(error)))
         page.on('console',lambda msg: record['console_errors'].append(msg.text) if msg.type=='error' else None)
         if args.stub:
+            # The bridge fixture does not render Unity; isolate its capability gate.
+            page.add_init_script('''const context = HTMLCanvasElement.prototype.getContext;
+              HTMLCanvasElement.prototype.getContext = function(kind,...args) {
+                return kind === "webgl2" ? {} : context.call(this,kind,...args);
+              };''')
             root=Path(__file__).resolve().parents[1]/'Assets/WebGLTemplates/DokdoStandalone'
             def route(request):
                 path=urlparse(request.request.url).path
@@ -49,7 +55,8 @@ def run(args):
         page.goto(args.url,wait_until='domcontentloaded')
         assert page.locator('#player-name').count()==0
         page.locator('#start-button').click()
-        page.wait_for_function('!!window.dokdoUnityInstance',timeout=240000)
+        page.wait_for_function('!!window.dokdoUnityInstance || !document.getElementById("error-panel").hidden',timeout=240000)
+        assert page.locator('#error-panel').is_hidden(),page.locator('#error-message').inner_text()
         record['checks']['startup']='passed'
         if args.stub:
             canvas=page.locator('#unity-canvas');canvas.focus()
