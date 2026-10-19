@@ -17,6 +17,49 @@ license over recovered material; see [provenance](docs/publication/PROVENANCE.md
 The existing Android APK is a separate historical artifact. No new Android
 build or reproducible source/APK pairing is claimed by this publication.
 
+## Build the standalone game
+
+The repository includes the Unity project, gameplay code, scenes, assets,
+and build tools. You do not need the original APK or the private source
+repository to build it.
+
+Install and activate **Unity 6000.3.18f1** with **Web Build Support**, plus
+**Python 3.10 or newer**, **Git**, and **ffmpeg** on your PATH. The commands
+below use Bash and have been validated on Linux. Use editor and project paths
+without spaces, commas, or double quotes.
+
+```bash
+git clone --branch standalone-publication \
+  https://github.com/ykondrashyn/dokdo.online.git
+cd dokdo.online
+
+# Set this to your installed Unity editor executable.
+export UNITY_EDITOR=/path/to/6000.3.18f1/Editor/Unity
+python3 tool/publication.py build
+python3 -m http.server 8000 --directory Builds/Standalone
+```
+
+Run the build from a clean, committed checkout. It compiles the project,
+runs the EditMode and PlayMode tests, and builds both **Desktop/DXT** and
+**Mobile/ASTC** WebGL players into `Builds/Standalone/`.
+
+Open **http://localhost:8000/** to play. The page selects a compatible player
+for your browser. Serve the files over HTTP; opening `index.html` directly
+from disk does not work.
+
+To create a ZIP after the build, run this in another terminal from the
+repository directory:
+
+```bash
+python3 tool/publication.py candidate
+```
+
+The ZIP, `publication.json`, and `SHA256SUMS` are written to `Builds/Review/`.
+This is a local review candidate; release qualification requires the
+[browser acceptance checklist](docs/publication/ACCEPTANCE.md).
+See the [full build and verification guide](docs/publication/README.md) for
+individual checks, browser tests, and release packaging.
+
 ---
 
 <div align="center">
@@ -41,6 +84,7 @@ build or reproducible source/APK pairing is claimed by this publication.
 
 ## 📑 Contents
 
+- [Build the standalone game](#build-the-standalone-game)
 - [What is DOKDO?](#-what-is-dokdo)
 - [Features](#-features)
 - [Screenshots](#-screenshots)
