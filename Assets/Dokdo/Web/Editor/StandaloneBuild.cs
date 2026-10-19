@@ -38,6 +38,17 @@ namespace Dokdo.Web.Editor
             PlayerSettings.SetApiCompatibilityLevel(web, ApiCompatibilityLevel.NET_Standard);
             PlayerSettings.SetManagedStrippingLevel(web, ManagedStrippingLevel.Low);
             PlayerSettings.SetScriptingDefineSymbols(web, "DOKDO_STANDALONE");
+            // IL2CPP uses __FILE__ in unsupported-operation diagnostics even
+            // with debug symbols disabled. Keep local paths out of the player.
+            var mappings = new[] {
+                EditorApplication.applicationContentsPath + "=UnityEditor",
+                Directory.GetCurrentDirectory() + "=DOKDOSource"
+            };
+            if (mappings.Any(path => path.Contains(',') || path.Contains('"')))
+                throw new InvalidOperationException("Build paths cannot contain commas or double quotes.");
+            PlayerSettings.SetAdditionalIl2CppArgs("--compiler-flags=\"" +
+                string.Join(",", mappings.Select(path => "-ffile-prefix-map=" +
+                    path.Replace('\\', '/'))) + "\"");
             PlayerSettings.stripEngineCode = true;
             PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.WebGL, false);
             PlayerSettings.SetGraphicsAPIs(BuildTarget.WebGL, new[] { GraphicsDeviceType.OpenGLES3 });
