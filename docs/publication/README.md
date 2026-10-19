@@ -43,7 +43,8 @@ save before changing origins or clearing browser storage.
 The build uses size optimization without link-time optimization to keep
 build memory requirements manageable on ordinary development machines.
 Compiler prefix maps replace local editor and project paths in native
-diagnostic strings. Build paths must not contain commas or double quotes.
+diagnostic strings. Build paths must not contain whitespace, commas or double
+quotes because Unity forwards this native flag string without shell quoting.
 
 For browser bridge checks and a real-player startup/network smoke, install
 Playwright in your own Python environment, install its Chromium and Firefox

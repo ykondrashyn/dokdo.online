@@ -44,11 +44,11 @@ namespace Dokdo.Web.Editor
                 EditorApplication.applicationContentsPath + "=UnityEditor",
                 Directory.GetCurrentDirectory() + "=DOKDOSource"
             };
-            if (mappings.Any(path => path.Contains(',') || path.Contains('"')))
-                throw new InvalidOperationException("Build paths cannot contain commas or double quotes.");
+            if (mappings.Any(path => path.Any(char.IsWhiteSpace) || path.Contains(',') || path.Contains('"')))
+                throw new InvalidOperationException("Build paths cannot contain whitespace, commas or double quotes.");
             PlayerSettings.SetAdditionalIl2CppArgs("--compiler-flags=\"" +
-                string.Join(" ", mappings.Select(path => "\\\"-ffile-prefix-map=" +
-                    path.Replace('\\', '/') + "\\\"")) + "\"");
+                string.Join(" ", mappings.Select(path => "-ffile-prefix-map=" +
+                    path.Replace('\\', '/'))) + "\"");
             PlayerSettings.stripEngineCode = true;
             PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.WebGL, false);
             PlayerSettings.SetGraphicsAPIs(BuildTarget.WebGL, new[] { GraphicsDeviceType.OpenGLES3 });
