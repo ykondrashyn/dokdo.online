@@ -3,6 +3,15 @@
   const get = id => document.getElementById(id);
   const app = get("dokdo-app"), canvas = get("unity-canvas");
   const clipboard = get("clipboard-panel"), text = get("clipboard-text");
+  // Unity can request fullscreen directly on its canvas. Include the HTML
+  // save-transfer dialog and preserve the native method's arguments/return.
+  for (const method of ["requestFullscreen", "webkitRequestFullscreen",
+      "mozRequestFullScreen", "msRequestFullscreen"]) {
+    if (typeof canvas[method] !== "function" || typeof app[method] !== "function") continue;
+    Object.defineProperty(canvas, method, {configurable: true, value: function (...args) {
+      return app[method].apply(app, args);
+    }});
+  }
   let instance = null, sender = null, enabled = false, mask = 0;
   let composing = false, focused = true, loading = false, blocked = false;
   let landscape = false, pasteMode = false;

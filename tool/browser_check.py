@@ -33,6 +33,10 @@ def run(args):
             page.add_init_script('''const context = HTMLCanvasElement.prototype.getContext;
               HTMLCanvasElement.prototype.getContext = function(kind,...args) {
                 return kind === "webgl2" ? {} : context.call(this,kind,...args);
+              };
+              HTMLElement.prototype.requestFullscreen = function(options) {
+                window.fullscreenRequest = {id:this.id, options};
+                return Promise.resolve("fullscreen-fixture");
               };''')
             root=Path(__file__).resolve().parents[1]/'Assets/WebGLTemplates/DokdoStandalone'
             def route(request):
@@ -60,6 +64,9 @@ def run(args):
         record['checks']['startup']='passed'
         if args.stub:
             canvas=page.locator('#unity-canvas');canvas.focus()
+            assert page.evaluate('document.getElementById("unity-canvas").requestFullscreen({navigationUI:"hide"})')=='fullscreen-fixture'
+            assert page.evaluate('fullscreenRequest')=={'id':'dokdo-app','options':{'navigationUI':'hide'}}
+            record['checks']['canvas-fullscreen-keeps-html-dialogs']='passed'
             page.keyboard.down('KeyW');page.keyboard.down('KeyD')
             assert page.evaluate('masks.slice(-1)[0]')=='9'
             page.keyboard.up('KeyW');page.keyboard.up('KeyD')
