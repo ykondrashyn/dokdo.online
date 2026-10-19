@@ -8,6 +8,14 @@ import zipfile
 import publication as p
 
 class PublicationTests(unittest.TestCase):
+    def test_water_restore_accepts_only_bounded_animation_phase(self):
+        original=b'shader: original\n    - _WaveOffset: {r: 0, g: 0, b: 0, a: 0}\n'
+        animated=original.replace(b'r: 0,',b'r: 0.01,')
+        self.assertEqual(p.water_static_bytes(original),p.water_static_bytes(animated))
+        self.assertNotEqual(p.water_static_bytes(original),p.water_static_bytes(animated.replace(b'original',b'changed')))
+        for value in [b'nan',b'inf',b'2',b'-1']:
+            with self.assertRaises(ValueError):p.water_static_bytes(original.replace(b'r: 0,',b'r: '+value+b','))
+
     def test_export_rejects_forbidden_credentials_links_and_mismatches(self):
         spec=importlib.util.spec_from_file_location('export_source',Path(__file__).with_name('export-source.py'))
         module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)

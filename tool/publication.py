@@ -3,6 +3,7 @@
 import argparse
 import hashlib
 import json
+import math
 import os
 from pathlib import Path, PurePosixPath
 import re
@@ -104,6 +105,16 @@ def build_trees():
 
 def clean(): require(not git('status', '--porcelain'), 'Commit reviewed changes before building or packaging')
 
+def water_static_bytes(data):
+    # The recovered ExecuteInEditMode water component animates this shared
+    # material property. Ignore only that bounded phase when checking drift.
+    pattern=rb'(?m)^    - _WaveOffset: \{r: ([^,]+), g: ([^,]+), b: ([^,]+), a: ([^}]+)\}$'
+    matches=list(re.finditer(pattern,data))
+    require(len(matches)==1, 'Unexpected water animation serialization')
+    values=[float(value) for value in matches[0].groups()]
+    require(all(math.isfinite(value) and 0 <= value <= 1 for value in values), 'Invalid water animation phase')
+    return re.sub(pattern,b'    - _WaveOffset: runtime-phase',data).split()
+
 def run_unity(mode):
     settings = {p:p.read_bytes() for p in (ROOT/'ProjectSettings').glob('*') if p.is_file()}
     water=ROOT/'Assets/Material/WaterProDaytime.mat'; water_bytes=water.read_bytes()
@@ -111,9 +122,9 @@ def run_unity(mode):
         subprocess.run(['bash', str(ROOT/'tool/unity.sh'), mode], cwd=ROOT, check=True)
     finally:
         for path,data in settings.items(): path.write_bytes(data)
-        # Unity resaves this legacy material during PlayMode tests. Restore
-        # serialization-only whitespace; a semantic mutation requires review.
-        require(water.read_bytes().split()==water_bytes.split(), 'Unity changed water material semantics')
+        # Restore the animated phase and serialization whitespace. Any other
+        # material change still requires explicit review.
+        require(water_static_bytes(water.read_bytes())==water_static_bytes(water_bytes), 'Unity changed water material semantics')
         water.write_bytes(water_bytes)
 
 def compile_project():
