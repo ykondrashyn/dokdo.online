@@ -61,6 +61,10 @@ under `Assets/Dokdo/Runtime/Tweening`. No recovered DOTween Pro DLL is included.
 ## Historical Android artifact
 
 `dokdo-1.16.6-r1.apk` and the older `v1.16.6-r1` GitHub release are preserved
-historical artifacts. This publication creates no Android build and does not
-claim that the standalone WebGL source reproduces that APK. The WebGL ZIP is
-built freshly from the exact public commit named in its publication manifest.
+historical artifacts. The [Android build workflow](ANDROID.md) creates a new
+standalone app with a separate package ID and the builder's local signing key.
+It does not reproduce the historical APK or establish update compatibility
+with it. The unused recovered PreciseLocale wrapper has been removed;
+localization uses Unity's system language without that Android plugin.
+The WebGL ZIP is built freshly from the exact public commit named in its
+publication manifest.

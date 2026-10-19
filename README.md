@@ -1,4 +1,4 @@
-# DOKDO standalone source and WebGL download
+# DOKDO standalone source, WebGL and Android builds
 
 This repository now includes **source-available standalone Unity source**
 derived from `dokdo-1.16.6-web9-r6`. Build instructions, provenance and the
@@ -14,10 +14,13 @@ public captain names are **hosted-only**; ordinary gameplay and save controls
 also apply to the standalone game. Its source has no blanket open-source
 license over recovered material; see [provenance](docs/publication/PROVENANCE.md).
 
-The existing Android APK is a separate historical artifact. No new Android
-build or reproducible source/APK pairing is claimed by this publication.
+The existing Android APK is a separate historical artifact. The Android
+build below creates a new standalone app; it does not reproduce that APK.
 
 ## Build the standalone game
+
+For an Android APK, see [Build an Android APK](#build-an-android-apk) below.
+This section builds the browser version; Mobile/ASTC is also WebGL.
 
 The repository includes the Unity project, gameplay code, scenes, assets,
 and build tools. You do not need the original APK or the private source
@@ -60,6 +63,43 @@ This is a local review candidate; release qualification requires the
 See the [full build and verification guide](docs/publication/README.md) for
 individual checks, browser tests, and release packaging.
 
+## Build an Android APK
+
+Install and activate **Unity 6000.3.18f1** with **Android Build Support**,
+**Android SDK & NDK Tools**, and **OpenJDK** in Unity Hub. Use the bundled
+tools and install Android SDK Platform **36** if it is missing. The command
+below also requires **Python 3.10+**, **Git**, and **Bash**. Close the Unity
+Editor before running it from a clean, committed checkout:
+
+```bash
+git clone --branch standalone-publication \
+  https://github.com/ykondrashyn/dokdo.online.git
+cd dokdo.online
+export UNITY_EDITOR=/path/to/6000.3.18f1/Editor/Unity
+python3 tool/publication.py build-android
+```
+
+Output: **`Builds/Android/dokdo-standalone.apk`**, `build.json`, and
+`SHA256SUMS`. This produces an **ARM64** APK for **Android 7.1/API 25 or
+newer**, using IL2CPP, OpenGL ES 3 and ETC2 textures. It runs the EditMode
+and PlayMode suites in the Editor with Android selected; those tests do not
+replace testing on a phone.
+
+The APK uses your machine's **debug signing key** and the separate package
+ID `com.reconstruction.dokdo.standalone`. It can coexist with the historical
+APK. No original APK, private repository, server, or private signing key is
+needed. Move `Builds/Android` aside before another build.
+
+With USB debugging enabled and the Android SDK's `adb` on your PATH:
+
+```bash
+adb install -r Builds/Android/dokdo-standalone.apk
+```
+
+The [Android build guide](docs/publication/ANDROID.md) also covers building
+through Unity's menus, release signing, installation problems, save transfer,
+and the device checks still required before distributing an APK.
+
 ---
 
 <div align="center">
@@ -85,6 +125,7 @@ individual checks, browser tests, and release packaging.
 ## 📑 Contents
 
 - [Build the standalone game](#build-the-standalone-game)
+- [Build an Android APK](#build-an-android-apk)
 - [What is DOKDO?](#-what-is-dokdo)
 - [Features](#-features)
 - [Screenshots](#-screenshots)

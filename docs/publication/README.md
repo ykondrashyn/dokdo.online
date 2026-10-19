@@ -1,5 +1,8 @@
 # Standalone publication
 
+For a native Android APK, use the [Android build guide](ANDROID.md).
+The commands and release packaging below are for WebGL.
+
 This is a source-available Unity reconstruction of DOKDO 1.16.6. It derives
 from the signed source tag `dokdo-1.16.6-web9-r6`, commit
 `847f6e2284fcc87f9fa20b1e1addbd585f7627b8`. Later source changes and private

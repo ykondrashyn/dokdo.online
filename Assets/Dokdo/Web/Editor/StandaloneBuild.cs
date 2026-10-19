@@ -38,17 +38,7 @@ namespace Dokdo.Web.Editor
             PlayerSettings.SetApiCompatibilityLevel(web, ApiCompatibilityLevel.NET_Standard);
             PlayerSettings.SetManagedStrippingLevel(web, ManagedStrippingLevel.Low);
             PlayerSettings.SetScriptingDefineSymbols(web, "DOKDO_STANDALONE");
-            // IL2CPP uses __FILE__ in unsupported-operation diagnostics even
-            // with debug symbols disabled. Keep local paths out of the player.
-            var mappings = new[] {
-                EditorApplication.applicationContentsPath + "=UnityEditor",
-                Directory.GetCurrentDirectory() + "=DOKDOSource"
-            };
-            if (mappings.Any(path => path.Any(char.IsWhiteSpace) || path.Contains(',') || path.Contains('"')))
-                throw new InvalidOperationException("Build paths cannot contain whitespace, commas or double quotes.");
-            PlayerSettings.SetAdditionalIl2CppArgs("--compiler-flags=\"" +
-                string.Join(" ", mappings.Select(path => "-ffile-prefix-map=" +
-                    path.Replace('\\', '/'))) + "\"");
+            SetPortableCompilerPaths();
             PlayerSettings.stripEngineCode = true;
             PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.WebGL, false);
             PlayerSettings.SetGraphicsAPIs(BuildTarget.WebGL, new[] { GraphicsDeviceType.OpenGLES3 });
@@ -91,6 +81,20 @@ namespace Dokdo.Web.Editor
                 throw new InvalidOperationException("Standalone build failed: " + report.summary.result);
             }
             Debug.Log("DOKDO_STANDALONE_BUILD_OK " + name);
+        }
+
+        internal static void SetPortableCompilerPaths()
+        {
+            // IL2CPP uses __FILE__ even when debug symbols are disabled.
+            var mappings = new[] {
+                EditorApplication.applicationContentsPath + "=UnityEditor",
+                Directory.GetCurrentDirectory() + "=DOKDOSource"
+            };
+            if (mappings.Any(path => path.Any(char.IsWhiteSpace) || path.Contains(',') || path.Contains('"')))
+                throw new InvalidOperationException("Build paths cannot contain whitespace, commas or double quotes.");
+            PlayerSettings.SetAdditionalIl2CppArgs("--compiler-flags=\"" +
+                string.Join(" ", mappings.Select(path => "-ffile-prefix-map=" +
+                    path.Replace('\\', '/'))) + "\"");
         }
     }
 }

@@ -157,6 +157,55 @@ def build():
     write_json(ROOT/'.artifacts/build.json', {'build_commit': build_commit, 'trees': trees,
                'unity': UNITY, 'files': files, 'compile': 'passed', 'editmode': 'passed'})
 
+def android_apk(path):
+    require(path.is_file() and not path.is_symlink(), 'APK is missing or a symlink')
+    with zipfile.ZipFile(path) as archive:
+        names=archive.namelist()
+        require(len(names)==len(set(names)), 'Duplicate APK entry')
+        required={'AndroidManifest.xml', 'classes.dex',
+                  'lib/arm64-v8a/libil2cpp.so', 'lib/arm64-v8a/libunity.so'}
+        require(required.issubset(names), 'Incomplete ARM64 Unity APK')
+        require(any(n.startswith('assets/bin/Data/') for n in names), 'Missing Unity game data')
+        for item in archive.infolist():
+            safe_name(item.filename.rstrip('/'))
+            require(stat.S_IFMT(item.external_attr>>16) in (0,stat.S_IFREG,stat.S_IFDIR), 'APK contains a link')
+            if item.is_dir(): continue
+            require(not item.filename.startswith('lib/') or item.filename.startswith('lib/arm64-v8a/'), 'Unexpected APK architecture')
+            require(item.file_size<=512*1024*1024, 'Oversized APK entry')
+            validate_file(item.filename, archive.read(item))
+        require(archive.testzip() is None, 'Corrupt APK entry')
+    return sha(path.read_bytes())
+
+def build_android():
+    audit(); clean()
+    output=ROOT/'Builds/Android'
+    require(not output.exists(), 'Builds/Android already exists; move it aside before rebuilding')
+    build_commit=git('rev-parse','HEAD'); trees=build_trees()
+    for mode in ['android-compile','android-test','android-test-play','android']:
+        run_unity(mode)
+    clean()
+    suites={}
+    for suite in ['editmode','playmode']:
+        xml=(ROOT/'.artifacts'/('android-'+suite+'.xml')).read_bytes()
+        result=ET.fromstring(xml)
+        require(result.get('result')=='Passed' and int(result.get('passed','0'))>0, 'Android editor tests did not pass: '+suite)
+        suites[suite]={'result':'passed','passed':int(result.get('passed')),'report_sha256':sha(xml)}
+    apk=output/'dokdo-standalone.apk'; digest=android_apk(apk)
+    write_json(output/'build.json', {
+        'schema':1, 'public_build_commit':build_commit, 'build_input_trees':trees,
+        'source_tag':SOURCE_TAG, 'source_commit':SOURCE_COMMIT, 'unity_version':UNITY,
+        'source_inventory_sha256':sha((ROOT/INVENTORY).read_bytes()),
+        'application_id':'com.reconstruction.dokdo.standalone',
+        'version':'1.16.6-public.1', 'version_code':1160601,
+        'architecture':'arm64-v8a', 'texture_compression':'ETC2',
+        'min_sdk':25, 'target_sdk':36, 'signing':'local-debug-key',
+        'artifacts':{apk.name:digest}, 'status':'local-build',
+        'validation':{'compile':'passed','editor_tests':suites,
+                      'apk_structure':'passed','device_acceptance':'pending'}})
+    (output/'SHA256SUMS').write_text(''.join(sha(p.read_bytes())+'  '+p.name+'\n'
+        for p in [apk,output/'build.json']))
+    print('Android APK, source/test record and checksums: '+str(output))
+
 def payload_hashes(root):
     require(root.is_dir() and not root.is_symlink(), 'Player directory is missing or a symlink')
     names=[]
@@ -286,7 +335,7 @@ def verify_source(archive_path):
 
 if __name__ == '__main__':
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command', choices=['inventory','audit','secrets','compile','test','build','candidate','package','verify','verify-source'])
+    parser.add_argument('command', choices=['inventory','audit','secrets','compile','test','build','build-android','candidate','package','verify','verify-source'])
     parser.add_argument('--acceptance', type=Path)
     parser.add_argument('--directory', type=Path)
     parser.add_argument('--archive', type=Path)
@@ -299,6 +348,7 @@ if __name__ == '__main__':
         elif args.command == 'verify-source':
             require(args.archive is not None, 'Source verification requires --archive FILE');verify_source(args.archive)
         elif args.command == 'compile': compile_project()
+        elif args.command == 'build-android': build_android()
         else: globals()[args.command]()
     except (ValueError, OSError, subprocess.CalledProcessError) as error:
         parser.exit(1, str(error)+'\n')

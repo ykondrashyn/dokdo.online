@@ -8,6 +8,25 @@ import zipfile
 import publication as p
 
 class PublicationTests(unittest.TestCase):
+    def test_android_apk_rejects_missing_code_foreign_abi_and_signing_keys(self):
+        required=['AndroidManifest.xml','classes.dex','lib/arm64-v8a/libil2cpp.so',
+                  'lib/arm64-v8a/libunity.so','assets/bin/Data/globalgamemanagers']
+        for change in ['valid','missing','foreign-abi','private-key','symlink']:
+            with self.subTest(change=change), tempfile.TemporaryDirectory() as tmp:
+                apk=Path(tmp)/'player.apk'
+                with zipfile.ZipFile(apk,'w') as archive:
+                    for name in required:
+                        if change=='missing' and name.endswith('libil2cpp.so'): continue
+                        archive.writestr(name,b'fixture')
+                    if change=='foreign-abi': archive.writestr('lib/x86/libunity.so',b'fixture')
+                    if change=='private-key': archive.writestr('assets/signing.keystore',b'fixture')
+                    if change=='symlink':
+                        item=zipfile.ZipInfo('assets/link'); item.external_attr=0o120777<<16
+                        archive.writestr(item,b'target')
+                if change=='valid': self.assertEqual(p.android_apk(apk),p.sha(apk.read_bytes()))
+                else:
+                    with self.assertRaises(ValueError): p.android_apk(apk)
+
     def test_player_rejects_duplicate_texture_variants(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp); (root/'index.html').write_text('selector')
