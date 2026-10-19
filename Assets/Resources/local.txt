@@ -56,7 +56,7 @@ cloud_load,불러오기,Load,加載,呼ぶこと,Anrufen,нагрузка
 cloud_save_success,클라우드 저장에 성공하였습니다.,Cloud Save success!,雲端儲存成功！,クラウドの貯蔵に成功しました。,Erfolgreiche Speicherung der Cloud.,Успех облачного хранения!
 cloud_save_fail,클라우드 저장 실패!,Failed to save to cloud!,無法保存到雲端！,クラウド保存失敗。,Cloud Save fehlgeschlagen.,Не удается сохранить в облаке!
 cloud_load_fail,클라우드 불러오기 실패!,Failed to load!,無法加載！,クラウド読み込み、失敗。,Cloud-Laden  Fehler.,Невозможно загрузить!
-cloud_backup,클라우드 백업,Cloud Back Up,雲備份,クラウドバックアップ,Cloud-Backup,Предоставление облаков
+cloud_backup,저장 데이터 전송,Save transfer,存档传输,セーブデータの移行,Spielstand übertragen,Перенос сохранения
 daily_reward,일일 보상,Daily Reward,每日獎勵,毎日補償,Tägliche Vergütung,Ежедневные награды
 re_reward,재접속 보상,Reconnection reward,重新連結獎勵,再接続補償,Wiederanschlusskompensation,Поднимите награды
 tip1,해적선은 다른 배들보다 빠릅니다.,Pirate ships are faster than other ships.,海盜船比其他船舶要快。,海賊船は他の船より早いです。,Piratenschiffe sind schneller als andere Schiffe.,Corsair быстрее  чем другие корабли.

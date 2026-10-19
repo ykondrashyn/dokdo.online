@@ -6418,12 +6418,12 @@ MonoBehaviour:
     - "Невозможно загрузить!\r"
   - lang:
     - cloud_backup
-    - 클라우드 백업
-    - Cloud Back Up
-    - 雲備份
-    - クラウドバックアップ
-    - Cloud-Backup
-    - "Предоставление облаков\r"
+    - 저장 데이터 전송
+    - Save transfer
+    - 存档传输
+    - セーブデータの移行
+    - Spielstand übertragen
+    - "Перенос сохранения\r"
   - lang:
     - daily_reward
     - 일일 보상
