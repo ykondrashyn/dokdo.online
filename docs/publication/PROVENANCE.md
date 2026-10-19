@@ -26,6 +26,9 @@ receipt fields remain compatible with the pinned reconstruction.
 Four obsolete Unity GUI Layer components are removed from the recovered
 cameras; Unity 6 no longer supports them. Asset and gameplay script GUIDs
 remain intact. The standalone project has a separate local product identity.
+Unity 6000.3.18f1 normalizes the legacy joystick mesh, its importer metadata,
+and quality/time settings during import. These normalized files are included
+in the public inventory so a clean checkout starts from the reviewed form.
 
 ## Anti-cheat compatibility
 

@@ -20,13 +20,13 @@ private repository or server tool is required for normal builds.
 
 ```sh
 export UNITY_EDITOR=/path/to/6000.3.18f1/Editor/Unity
-bash tool/unity.sh compile
-bash tool/unity.sh test
+python3 tool/publication.py compile
+python3 tool/publication.py test
 python3 -m unittest discover -s tool -p 'test_*.py'
 python3 tool/publication.py audit
 # Requires a local Gitleaks executable; tested with version 8.30.1.
 python3 tool/publication.py secrets
-# Run from a clean committed checkout. Includes compile and EditMode tests.
+# Run from a clean committed checkout. Includes compile and both Unity suites.
 python3 tool/publication.py build
 python3 tool/publication.py candidate
 python3 -m http.server 8000 --directory Builds/Standalone

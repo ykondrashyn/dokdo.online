@@ -1894,8 +1894,8 @@
     "ThirdParty/DOTween/LICENSE.txt": "a0c7ada1bd4f1014833af5cc9bb7599666d4a9ba901a2d1d889c9d75587e438e",
     "ThirdParty/DOTween/readme.txt": "c9dc7e0d7df26ce9ad0158e648d343b5a0a62fc3639884c921222e57dd00d130",
     "docs/publication/ACCEPTANCE.md": "bd7c78adefe2255d73031caccf528dd356783e61be94a9bb72eeb112d037b067",
-    "docs/publication/PROVENANCE.md": "301c969f571a3155ef2f1bb94a880f24adc3fd4a5c36f5454872437cddeea8b5",
-    "docs/publication/README.md": "669acbbd2976f6abd84df6a9ce3c27ceb5ba7b843e8a43170f66b19923013db5",
+    "docs/publication/PROVENANCE.md": "25b1a501ffd458684fd04f4833ea2a2457b9f8cddc1d301c281cdc07fa7f5ef6",
+    "docs/publication/README.md": "b4f0a6814e165f6f5d0a84a361e9248364d44533accbf07a865c0158a0a83043",
     "docs/publication/export-allowlist.json": "f1aa0eea90674ee5ae7dde1a245809e7ad07d9b19535bbe8c0232230c20ca2e3",
     "dokdo-1.16.6-r1.apk": "8de4bbd117cb76295e6567e3b8a1cc27f1f6d2bfb977e1ac863d6a72e019f527",
     "screenshots/dokdo-controls.jpg": "b03b1b21096ae79209201c3e9241e705775a4517859e4f60bc8eb0da837a6479",
@@ -1906,10 +1906,10 @@
     "screenshots/dokdo-war-memorial-seoul.jpg": "068312bf53ab991be4ac7d205e63a071fffdd3e55e19add1362dbd2ed17557bb",
     "tool/browser_check.py": "c209620e139ef0c0eca2815f5624f2c2b5155e031200f2edba6d3e88466f25f5",
     "tool/export-source.py": "441c608b311d6bd2ebe5e8f9a20c09b38fbf8222eebbe996a9745bd2211b8b27",
-    "tool/publication.py": "23ec8b656c4f4b34e8952b0da53b4740ffd2a2333b212f574fbffb6349e38cc8",
+    "tool/publication.py": "94e1deb2c94c70c405eac5f3b389a63a4bed8649feda2ba3a0e75769f40e7840",
     "tool/selector.html": "31ec49c50219e326cd59f1a34ffeedf400811b3fae9b57b7f27e78622e2ae533",
     "tool/test_publication.py": "e1d06927f517f0a1645c2669964c40dd48b995bae3982af988ad1765b33a41f5",
-    "tool/unity.sh": "dff0be1d04d96b5dbd8996e9155abd21ec3fe0ae3f0a27b3b14b8815f20e35f4"
+    "tool/unity.sh": "e5c3845fdba06341a7ff5ec1a5c3d42364fb9859f11781b373d7b706ae896d75"
   },
   "schema": 1
 }

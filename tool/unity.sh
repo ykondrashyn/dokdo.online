@@ -9,20 +9,21 @@ args=(-batchmode -nographics -projectPath "$root" -buildTarget WebGL -job-worker
 case "$mode" in
   compile) args+=(-executeMethod Dokdo.Web.Editor.StandaloneBuild.Compile -quit) ;;
   test) args+=(-runTests -testPlatform EditMode -testResults "$root/.artifacts/editmode.xml") ;;
+  test-play) args+=(-runTests -testPlatform PlayMode -testResults "$root/.artifacts/playmode.xml") ;;
   desktop) args+=(-executeMethod Dokdo.Web.Editor.StandaloneBuild.Desktop -quit) ;;
   mobile) args+=(-executeMethod Dokdo.Web.Editor.StandaloneBuild.Mobile -quit) ;;
   report) args+=(-executeMethod Dokdo.Web.Editor.StandaloneBuild.InspectReport -quit) ;;
-  *) echo 'Usage: tool/unity.sh compile|test|desktop|mobile' >&2; exit 2 ;;
+  *) echo 'Usage: tool/unity.sh compile|test|test-play|desktop|mobile|report' >&2; exit 2 ;;
 esac
 "$UNITY_EDITOR" "${args[@]}"
 python3 - "$mode" <<'PY'
 import pathlib, sys, xml.etree.ElementTree as ET
 mode = sys.argv[1]
 log = pathlib.Path('.artifacts', mode+'.log').read_text()
-if mode == 'test':
-    result = ET.parse('.artifacts/editmode.xml').getroot()
+if mode in ('test', 'test-play'):
+    result = ET.parse('.artifacts/'+('editmode' if mode=='test' else 'playmode')+'.xml').getroot()
     assert result.get('result') == 'Passed' and int(result.get('passed', '0')) > 0, 'Unity tests did not pass'
-    print('Unity EditMode:', result.attrib)
+    print('Unity '+mode+':', result.attrib)
 elif mode == 'report':
     print('\n'.join(line for line in log.splitlines() if 'DOKDO_BUILD_REPORT' in line))
 else:

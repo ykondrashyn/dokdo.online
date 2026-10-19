@@ -12,6 +12,7 @@ import subprocess
 import tempfile
 import tarfile
 import zipfile
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 INVENTORY = 'docs/publication/source-inventory.json'
@@ -103,16 +104,33 @@ def build_trees():
 
 def clean(): require(not git('status', '--porcelain'), 'Commit reviewed changes before building or packaging')
 
+def run_unity(mode):
+    settings = {p:p.read_bytes() for p in (ROOT/'ProjectSettings').glob('*') if p.is_file()}
+    water=ROOT/'Assets/Material/WaterProDaytime.mat'; water_bytes=water.read_bytes()
+    try:
+        subprocess.run(['bash', str(ROOT/'tool/unity.sh'), mode], cwd=ROOT, check=True)
+    finally:
+        for path,data in settings.items(): path.write_bytes(data)
+        # Unity resaves this legacy material during PlayMode tests. Restore
+        # serialization-only whitespace; a semantic mutation requires review.
+        require(water.read_bytes().split()==water_bytes.split(), 'Unity changed water material semantics')
+        water.write_bytes(water_bytes)
+
+def compile_project():
+    audit(); clean(); run_unity('compile'); clean()
+
+def test():
+    audit(); clean()
+    for mode in ['test','test-play']: run_unity(mode)
+    clean()
+    write_json(ROOT/'.artifacts/tests.json',{'trees':build_trees(),
+        'reports':{mode:sha((ROOT/'.artifacts'/(mode+'.xml')).read_bytes()) for mode in ['editmode','playmode']}})
+
 def build():
     audit(); clean()
     build_commit = git('rev-parse', 'HEAD'); trees = build_trees()
-    # Unity writes build settings even in batch mode; restore their exact input bytes.
-    settings = {p:p.read_bytes() for p in (ROOT/'ProjectSettings').glob('*') if p.is_file()}
-    try:
-        for mode in ['compile', 'test', 'desktop', 'mobile']:
-            subprocess.run(['bash', str(ROOT/'tool/unity.sh'), mode], cwd=ROOT, check=True)
-    finally:
-        for path, data in settings.items(): path.write_bytes(data)
+    run_unity('compile'); test()
+    for mode in ['desktop','mobile']: run_unity(mode)
     clean()
     output=ROOT/'Builds/Standalone'
     shutil.copyfile(ROOT/'tool/selector.html', output/'index.html')
@@ -155,6 +173,15 @@ def package(acceptance_path=None):
     require(build_record['trees'] == build_trees(), 'Unity input trees changed after build')
     output=ROOT/'Builds/Standalone'; files=payload_hashes(output)
     require(files == build_record['files'], 'Player checksums differ from the recorded build')
+    native={}
+    test_record=json.loads((ROOT/'.artifacts/tests.json').read_text())
+    require(test_record['trees']==build_trees(), 'Tests are for different Unity inputs')
+    for mode in ['editmode','playmode']:
+        xml=(ROOT/'.artifacts'/(mode+'.xml')).read_bytes()
+        result=ET.fromstring(xml)
+        require(sha(xml)==test_record['reports'][mode], 'Test evidence changed: '+mode)
+        require(result.get('result')=='Passed' and int(result.get('passed','0'))>0, 'Native tests did not pass: '+mode)
+        native[mode]={'result':'passed','passed':int(result.get('passed')),'report_sha256':sha(xml)}
     accepted=acceptance(acceptance_path, files) if acceptance_path else None
     directory=ROOT/'Builds'/('Release' if accepted else 'Review')
     require(not directory.exists(), 'Output already exists; do not overwrite reviewed artifacts')
@@ -171,7 +198,7 @@ def package(acceptance_path=None):
         'files':files, 'artifacts':{zip_path.name:sha(zip_path.read_bytes())},
         'build_input_trees':build_record['trees'],
         'source_inventory_sha256':sha((ROOT/INVENTORY).read_bytes()),
-        'validation':{'compile':build_record['compile'],'editmode':build_record['editmode'],
+        'validation':{'compile':build_record['compile'],'unity_tests':native,
                       'browser_acceptance':accepted or 'pending'}}
     write_json(directory/'publication.json',manifest)
     (directory/'SHA256SUMS').write_text(''.join(sha(p.read_bytes())+'  '+p.name+'\n' for p in [zip_path,directory/'publication.json']))
@@ -236,7 +263,7 @@ def verify_source(archive_path):
 
 if __name__ == '__main__':
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command', choices=['inventory','audit','secrets','build','candidate','package','verify','verify-source'])
+    parser.add_argument('command', choices=['inventory','audit','secrets','compile','test','build','candidate','package','verify','verify-source'])
     parser.add_argument('--acceptance', type=Path)
     parser.add_argument('--directory', type=Path)
     parser.add_argument('--archive', type=Path)
@@ -248,6 +275,7 @@ if __name__ == '__main__':
         elif args.command == 'verify': verify(args.directory or ROOT/'Builds/Release')
         elif args.command == 'verify-source':
             require(args.archive is not None, 'Source verification requires --archive FILE');verify_source(args.archive)
+        elif args.command == 'compile': compile_project()
         else: globals()[args.command]()
     except (ValueError, OSError, subprocess.CalledProcessError) as error:
         parser.exit(1, str(error)+'\n')
