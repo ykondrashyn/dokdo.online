@@ -1,0 +1,1973 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ness
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.99373686, y: 3.8553065E-08, z: 3.8553065E-08, w: 0.11174553}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: -0.0042915344, y: -1.8680815E-09, z: -1.8680815E-09, w: 0.03842874}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 0.45833334
+        value: {x: 0.979303, y: 3.3959523E-08, z: 3.3959523E-08, w: 0.20239961}
+        inSlope: {x: -0.07113544, y: -1.8169224E-08, z: -1.8169224E-08, w: 0.3444282}
+        outSlope: {x: -0.07123947, y: -1.8172841E-08, z: -1.8172841E-08, w: 0.3445387}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.0833334
+        value: {x: 0.94288754, y: 2.6654172E-08, z: 2.6654172E-08, w: 0.3331112}
+        inSlope: {x: 0.013923665, y: 2.3362665E-09, z: 2.3362665E-09, w: -0.039529797}
+        outSlope: {x: 0.014202935, y: 2.3782878E-09, z: 2.3782878E-09, w: -0.040207587}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.6666667
+        value: {x: 0.98197454, y: 3.4661447E-08, z: 3.4661447E-08, w: 0.18901312}
+        inSlope: {x: 0.051191866, y: 1.3873855E-08, z: 1.3873855E-08, w: -0.26602405}
+        outSlope: {x: 0.051116943, y: 1.38413725E-08, z: 1.38413725E-08, w: -0.26564598}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.2916667
+        value: {x: 0.9926075, y: 3.808304E-08, z: 3.808304E-08, w: 0.121369086}
+        inSlope: {x: 0.0056266743, y: 2.2453155E-09, z: 2.2453155E-09, w: -0.045752607}
+        outSlope: {x: 0.0055432315, y: 2.2382094E-09, z: 2.2382094E-09, w: -0.045742836}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 0.99373686, y: 3.8553065E-08, z: 3.8553065E-08, w: 0.11174553}
+        inSlope: {x: 0.00071525574, y: 2.984279E-10, z: 2.984279E-10, w: -0.006169066}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.1290167, y: 1.08338234E-07, z: -3.627445E-10, w: 0.9916424}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0.019421944, y: 1.3142635E-07, z: 9.466561E-08, w: 0.0025309047}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 0.5416667
+        value: {x: -0.0065637236, y: 1.0747779E-07, z: -1.3631993E-08, w: 0.9999785}
+        inSlope: {x: 0.36177415, y: 1.4725924E-07, z: 4.117481E-08, w: 0.0024208713}
+        outSlope: {x: 0.36173972, y: 1.471545E-07, z: 4.1115825E-08, w: 0.0023108262}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.0833334
+        value: {x: 0.100462765, y: 1.0540236E-07, z: -2.5052916E-08, w: 0.9949408}
+        inSlope: {x: -0.021086302, y: 1.4945022E-07, z: 6.665767E-08, w: 0.0020907472}
+        outSlope: {x: -0.021618603, y: 1.4952091E-07, z: 6.671783E-08, w: 0.0022172928}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.9166667
+        value: {x: -0.023449443, y: 1.0769265E-07, z: -1.181507E-08, w: 0.99972504}
+        inSlope: {x: -0.12717916, y: 8.909356E-08, z: 6.7368006E-08, w: -0.0029325474}
+        outSlope: {x: -0.12702762, y: 8.916685E-08, z: 6.740378E-08, w: -0.003032684}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: -0.1290167, y: 1.08338234E-07, z: -3.627445E-10, w: 0.9916424}
+        inSlope: {x: -0.0048351535, y: 6.790518E-08, z: 5.089044E-08, w: -0.000629425}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.2126537, y: -1.0768909E-07, z: -3.394993E-08, w: 0.9771276}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: -6.43854E-08, z: 1.7879073E-07, w: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.0416667
+        value: {x: 0.21265371, y: -1.0768909E-07, z: -3.394993E-08, w: 0.9771276}
+        inSlope: {x: -0.0078392, y: -6.50948E-08, z: 1.777198E-07, w: 0.0017166135}
+        outSlope: {x: -0.008153915, y: -6.493792E-08, z: 1.7756747E-07, w: 0.0018119812}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.6666667
+        value: {x: 0.10913515, y: -1.03540636E-07, z: -4.5043024E-08, w: 0.9940269}
+        inSlope: {x: -0.15760662, y: -1.4892983E-07, z: 2.6682318E-07, w: 0.017261507}
+        outSlope: {x: -0.15694648, y: -1.4893686E-07, z: 2.6687985E-07, w: 0.017225742}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.6666667
+        value: {x: 0.193617, y: -1.0700872E-07, z: -3.6037115E-08, w: 0.9810772}
+        inSlope: {x: 0.12777749, y: -5.974249E-08, z: 2.0167701E-07, w: -0.025212765}
+        outSlope: {x: 0.12757094, y: -5.978302E-08, z: 2.0134746E-07, w: -0.025136122}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 0.2126537, y: -1.0768909E-07, z: -3.394993E-08, w: 0.9771276}
+        inSlope: {x: 0.009298323, y: -2.2921697E-07, z: 6.4012164E-07, w: -0.0020435841}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.056105547, y: 1.2614797E-07, z: 4.387175E-09, w: 0.9984248}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: -0.009764181, y: 2.5848797E-08, z: -4.355253E-08, w: 0.0006023206}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 0.7916667
+        value: {x: -0.04257783, y: 1.251013E-07, z: 1.679964E-08, w: 0.9990932}
+        inSlope: {x: -0.11363158, y: 3.069545E-08, z: -2.7937768E-08, w: -0.004818564}
+        outSlope: {x: -0.11321795, y: 3.0695443E-08, z: -2.7992844E-08, w: -0.0048535205}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.9583334
+        value: {x: 0.0030427526, y: 1.257374E-07, z: 1.1075329E-08, w: 0.99999535}
+        inSlope: {x: 0.065452665, y: 1.823456E-08, z: -3.7656736E-08, w: -0.00020435812}
+        outSlope: {x: 0.06541004, y: 1.8246736E-08, z: -3.765965E-08, w: -0.00017881392}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 0.056105547, y: 1.2614797E-07, z: 4.387175E-09, w: 0.9984248}
+        inSlope: {x: 0.0026859206, y: 2.0293099E-08, z: -3.5814903E-08, w: -0.00017881386}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.82326853, y: -1.1071404E-07, z: 1.1071404E-07, w: 0.56765217}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: -0.008991785, y: -9.5496935E-09, z: 9.5496935E-09, w: -0.0130789615}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 0.5833334
+        value: {x: -0.88086134, y: -7.9340644E-08, z: 7.9340644E-08, w: 0.4733744}
+        inSlope: {x: -0.13426372, y: -7.477751E-08, z: 7.477751E-08, w: -0.24967533}
+        outSlope: {x: -0.13407792, y: -7.466124E-08, z: 7.466124E-08, w: -0.24955921}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.0416667
+        value: {x: -0.91402227, y: -3.8379973E-08, z: 3.8379973E-08, w: 0.40566406}
+        inSlope: {x: 0.0049417675, y: 1.2401952E-09, z: -1.2401952E-09, w: 0.011249012}
+        outSlope: {x: 0.0053644194, y: 1.3002935E-09, z: -1.3002935E-09, w: 0.011980536}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.375
+        value: {x: -0.8260209, y: -1.1364418E-07, z: 1.1364418E-07, w: 0.56363946}
+        inSlope: {x: 0.5695225, y: 6.081961E-07, z: -6.081961E-07, w: 0.83470356}
+        outSlope: {x: 0.5698204, y: -0.0048722755, z: 0.0048722755, w: 0.83494186}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.625
+        value: {x: -0.6571343, y: -4.912306E-08, z: 1.4973392E-07, w: 0.7537735}
+        inSlope: {x: 0.6120205, y: 0.00030200277, z: -0.0029055793, w: 0.5335808}
+        outSlope: {x: 0.61368924, y: -7.0161E-09, z: 1.0475427E-06, w: 0.5348068}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.9166667
+        value: {x: -0.57671183, y: -3.357323E-08, z: 1.5396799E-07, w: 0.81694764}
+        inSlope: {x: -0.04434588, y: -6.104984E-07, z: -6.24384E-07, w: -0.03126685}
+        outSlope: {x: -0.045446243, y: -0.0020890043, z: 0.0020877654, w: -0.032131486}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.4583335
+        value: {x: -0.7262353, y: -1.04656806E-07, z: 1.04656806E-07, w: 0.68744624}
+        inSlope: {x: -0.36489046, y: 0.0006300926, z: -7.846255E-06, w: -0.38535774}
+        outSlope: {x: -0.3659509, y: -2.0302405E-06, z: 2.0302405E-06, w: -0.3866283}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9166667
+        value: {x: -0.8226279, y: -1.1003462E-07, z: 1.1003462E-07, w: 0.56858015}
+        inSlope: {x: -0.031211177, y: -3.2989064E-08, z: 3.2989064E-08, w: -0.044996098}
+        outSlope: {x: -0.030040683, y: -3.2741745E-08, z: 3.2741745E-08, w: -0.04434577}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: -0.82326853, y: -1.1071404E-07, z: 1.1071404E-07, w: 0.56765217}
+        inSlope: {x: -0.015735598, y: -1.5688764E-08, z: 1.5688764E-08, w: -0.021457626}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.11773853, y: 1.035616E-11, z: -2.8017709E-08, w: 0.9930446}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0.0064579337, y: 1.3425158E-10, z: 7.739286E-08, w: -0.00077027536}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.0833334
+        value: {x: 0.19021209, y: -2.0433721E-09, z: -2.79431E-08, w: 0.98174304}
+        inSlope: {x: -0.03920153, y: 4.4071413E-09, z: 7.660092E-08, w: 0.0075927125}
+        outSlope: {x: -0.039875504, y: 4.4551025E-09, z: 7.654067E-08, w: 0.007663454}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.6666667
+        value: {x: 0.061170556, y: 1.6009868E-09, z: -2.797193E-08, w: 0.99812734}
+        inSlope: {x: -0.19734032, y: -1.3744055E-08, z: 1.430962E-07, w: 0.01215934}
+        outSlope: {x: -0.1967706, y: -1.3715484E-08, z: 1.431018E-07, w: 0.012046412}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.4583335
+        value: {x: 0.083925016, y: 9.624446E-10, z: -2.8001175E-08, w: 0.99647206}
+        inSlope: {x: 0.11600318, y: -3.372716E-10, z: 1.0620671E-07, w: -0.009787711}
+        outSlope: {x: 0.11590123, y: -3.7903014E-10, z: 1.06155085E-07, w: -0.009775162}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 0.11773853, y: 1.035616E-11, z: -2.8017709E-08, w: 0.9930446}
+        inSlope: {x: 0.006109476, y: 1.1235457E-10, z: 1.6769161E-07, w: -0.00071525574}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.15219538, y: 1.178254E-07, z: -1.8140396E-08, w: 0.98835045}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0.0044290833, y: 3.7962657E-08, z: -6.394884E-09, w: -0.00071525574}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.0833334
+        value: {x: 0.1769668, y: 1.17332675E-07, z: -2.1093499E-08, w: 0.9842168}
+        inSlope: {x: -0.033493232, y: 3.860541E-08, z: -2.8317872E-09, w: 0.005997145}
+        outSlope: {x: -0.033974648, y: 3.859668E-08, z: -2.7654323E-09, w: 0.0061035156}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.7083334
+        value: {x: 0.061169818, y: 1.1899063E-07, z: -7.28887E-09, w: 0.9981274}
+        inSlope: {x: -0.1361489, y: 6.764368E-08, z: 1.21239845E-08, w: 0.00839233}
+        outSlope: {x: -0.13553023, y: 6.76323E-08, z: 1.20662955E-08, w: 0.008296967}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.75
+        value: {x: 0.14383197, y: 1.179746E-07, z: -1.7143359E-08, w: 0.98960215}
+        inSlope: {x: 0.08026611, y: 3.8212416E-08, z: -1.5330674E-08, w: -0.011615753}
+        outSlope: {x: 0.08003706, y: 3.802822E-08, z: -1.5279499E-08, w: -0.011730185}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 0.15219538, y: 1.178254E-07, z: -1.8140396E-08, w: 0.98835045}
+        inSlope: {x: 0.008010863, y: 1.9791732E-07, z: -3.1505436E-08, w: -0.0011444079}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6/ness_body_5
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.13763332, y: 2.5645961E-11, z: -1.5649802E-10, w: 0.9904832}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0.0061209383, y: -6.997287E-11, z: 4.321415E-10, w: -0.00082529505}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.0833334
+        value: {x: 0.20632617, y: 1.4677147E-11, z: -1.5790477E-10, w: 0.97848326}
+        inSlope: {x: -0.03761967, y: -4.6917605E-11, z: 4.3384538E-10, w: 0.007922833}
+        outSlope: {x: -0.03826618, y: -4.657881E-11, z: 4.3346277E-10, w: 0.008072171}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.6666667
+        value: {x: 0.08243981, y: 3.4293554E-11, z: -1.5483313E-10, w: 0.99659604}
+        inSlope: {x: -0.1896705, y: -2.0472907E-10, z: 7.9593443E-10, w: 0.015735626}
+        outSlope: {x: -0.18909147, y: -2.0453084E-10, z: 7.9583956E-10, w: 0.015667507}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.5416667
+        value: {x: 0.11392012, y: 2.9379138E-11, z: -1.5584033E-10, w: 0.9934899}
+        inSlope: {x: 0.10464872, y: -8.412723E-11, z: 5.3271654E-10, w: -0.011989047}
+        outSlope: {x: 0.10457037, y: -8.4340854E-11, z: 5.3287363E-10, w: -0.0120162945}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 0.13763332, y: 2.5645961E-11, z: -1.5649802E-10, w: 0.9904832}
+        inSlope: {x: 0.0059008533, y: -1.8321579E-10, z: 1.1236347E-09, w: -0.00085830706}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6/ness_body_5/ness_body_4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.0601436, y: 1.2940198E-11, z: 1.2931195E-10, w: 0.99818975}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0.0023462556, y: -2.8407832E-11, z: -2.8134062E-10, w: -0.0001300465}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.375
+        value: {x: 0.10414932, y: 1.8635968E-11, z: 1.2861467E-10, w: 0.9945617}
+        inSlope: {x: 0.017805532, y: -4.2965645E-11, z: -2.8068461E-10, w: -0.0018640003}
+        outSlope: {x: 0.017702578, y: -4.2968826E-11, z: -2.8051916E-10, w: -0.0018706686}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.4583335
+        value: {x: 0.08117298, y: 1.5663335E-11, z: 1.2901044E-10, w: 0.99670005}
+        inSlope: {x: -0.07186256, y: -3.362371E-11, z: -3.536276E-10, w: 0.005887104}
+        outSlope: {x: -0.0718981, y: -3.3657105E-11, z: -3.5307868E-10, w: 0.005841255}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 0.0601436, y: 1.2940198E-11, z: 1.2931195E-10, w: 0.99818975}
+        inSlope: {x: -0.0038146824, y: -7.692283E-11, z: -7.7390916E-10, w: 0.00023841858}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6/ness_body_5/ness_body_4/ness_body_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.014146814, y: 1.9973162E-13, z: 7.1482036E-11, w: 0.9998999}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0.011615921, y: -1.5968672E-12, z: -3.2072262E-10, w: -0.00017881393}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 0.6666667
+        value: {x: 0.11135742, y: 7.1530863E-12, z: 7.112352E-11, w: 0.99378043}
+        inSlope: {x: 0.18670404, y: -4.6140168E-11, z: -3.2348077E-10, w: -0.020921228}
+        outSlope: {x: 0.1863941, y: -4.599129E-11, z: -3.235745E-10, w: -0.020897906}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.625
+        value: {x: 0.1487461, y: 9.829524E-12, z: 7.080326E-11, w: 0.98887545}
+        inSlope: {x: -6.215996E-05, y: -3.066115E-11, z: -2.2083077E-10, w: 6.2197396E-05}
+        outSlope: {x: 0, y: -3.0724118E-11, z: -2.20917E-10, w: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.2916667
+        value: {x: 0.106452934, y: 6.8020927E-12, z: 7.1157934E-11, w: 0.99431777}
+        inSlope: {x: -0.18672647, y: -1.654795E-11, z: -3.1511224E-10, w: 0.020027159}
+        outSlope: {x: -0.18693878, y: -1.671189E-11, z: -3.1503963E-10, w: 0.019937752}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 0.014146814, y: 1.9973162E-13, z: 7.1482036E-11, w: 0.9998999}
+        inSlope: {x: -0.010749757, y: -1.2197231E-13, z: -3.206912E-10, w: 0.00017881527}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6/ness_body_5/ness_body_4/ness_body_3/ness_body_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.44688463, y: 1.804151E-11, z: -8.7479676E-11, w: 0.8945916}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0.009380854, y: -4.8611754E-11, z: 2.4238303E-10, w: -0.0047316914}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.0833334
+        value: {x: 0.49949098, y: 1.278716E-11, z: -8.840066E-11, w: 0.8663191}
+        inSlope: {x: -0.028252603, y: -4.0329903E-11, z: 2.399233E-10, w: 0.01634083}
+        outSlope: {x: -0.02883031, y: -4.0121757E-11, z: 2.3968008E-10, w: 0.016505903}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.625
+        value: {x: 0.38160434, y: 2.4266224E-11, z: -8.596127E-11, w: 0.92432576}
+        inSlope: {x: -0.23135777, y: -1.5832209E-10, z: 4.619639E-10, w: 0.095514156}
+        outSlope: {x: -0.23068228, y: -1.5822973E-10, z: 4.622164E-10, w: 0.09520299}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.8333335
+        value: {x: 0.44413254, y: 1.831034E-11, z: -8.742381E-11, w: 0.8959611}
+        inSlope: {x: 0.04454316, y: -3.9267384E-11, z: 2.2046723E-10, w: -0.022049632}
+        outSlope: {x: 0.044107437, y: -3.902434E-11, z: 2.1860291E-10, w: -0.02193451}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 0.44688463, y: 1.804151E-11, z: -8.7479676E-11, w: 0.8945916}
+        inSlope: {x: 0.007390976, y: -4.3071116E-10, z: 2.0944362E-09, w: -0.00333786}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6/ness_body_5/ness_body_4/ness_body_3/ness_body_2/ness_body_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.11065064, y: 0.48478824, z: 0.7531075, w: 0.43077365}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: -0.0047592013, y: -0.0059696343, z: -0.0025859245, w: 0.01001358}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.0833334
+        value: {x: -0.15025017, y: 0.4611735, z: 0.74609196, w: 0.45616958}
+        inSlope: {x: 0.019435698, y: 0.009380855, z: 0.00049517927, w: -0.0039889337}
+        outSlope: {x: 0.019837826, y: 0.009676989, z: 0.0005890341, w: -0.004291534}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.7916667
+        value: {x: -0.07661839, y: 0.50373214, z: 0.7576087, w: 0.40793693}
+        inSlope: {x: 0.05534817, y: 0.023561366, z: -0.0068159713, w: -0.006395262}
+        outSlope: {x: 0.054938454, y: 0.02350126, z: -0.00674384, w: -0.0059945243}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.6666667
+        value: {x: -0.105142966, y: 0.48800498, z: 0.75412726, w: 0.4267179}
+        inSlope: {x: -0.036750518, y: -0.021321435, z: -0.006948199, w: 0.027622499}
+        outSlope: {x: -0.036375854, y: -0.021355487, z: -0.006743838, w: 0.027486248}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: -0.11065064, y: 0.48478824, z: 0.7531075, w: 0.43077365}
+        inSlope: {x: -0.0030653833, y: -0.003576279, z: 0.00020435867, w: 0.0031675603}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.08331907, y: 0.037028138, z: 0.023182366, w: 0.9955648}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0.014066696, y: -0.01592189, z: -0.008791685, w: -0.00023841858}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.16017126, y: -0.050925408, z: -0.025352187, w: 0.98544866}
+        inSlope: {x: 0.2425313, y: -0.30791762, z: -0.1792237, w: -0.059962273}
+        outSlope: {x: 0.24260578, y: -0.3080349, z: -0.1792833, w: -0.060081474}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.1666667
+        value: {x: 0.23481378, y: -0.14064024, z: -0.073301665, w: 0.95901495}
+        inSlope: {x: -0.16412881, y: 0.14620271, z: 0.10209159, w: 0.06937979}
+        outSlope: {x: -0.16474724, y: 0.1468261, z: 0.10257959, w: 0.06977717}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.5416667
+        value: {x: 0.108036794, y: -0.019147892, z: 0.013564926, w: 0.9938699}
+        inSlope: {x: -0.40582818, y: 0.35414097, z: 0.24240215, w: 0.04784265}
+        outSlope: {x: -0.40588537, y: 0.35416344, z: 0.24236278, w: 0.04774333}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.875
+        value: {x: 0.03592944, y: 0.048549622, z: 0.061475433, w: 0.9962795}
+        inSlope: {x: -0.012114693, y: 0.012740523, z: 0.0076778117, w: -0.0005364326}
+        outSlope: {x: -0.01174326, y: 0.012413812, z: 0.007372635, w: -0.0006052163}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 0.08331907, y: 0.037028138, z: 0.023182366, w: 0.9955648}
+        inSlope: {x: 0.003817013, y: -0.0009525329, z: -0.0030793909, w: -0.00022007864}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.001/ness_wing_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.28830567, y: 0.05461256, z: 0.13386588, w: 0.9465608}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0.0100686, y: -0.013844324, z: -0.009270814, w: 0.0050618094}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 0.5416667
+        value: {x: -0.22407357, y: -0.032344997, z: 0.07492918, w: 0.971149}
+        inSlope: {x: 0.18987289, y: -0.25969967, z: -0.18274784, w: 0.049187582}
+        outSlope: {x: 0.18987486, y: -0.25967616, z: -0.18278617, w: 0.049148288}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.125
+        value: {x: -0.16917038, y: -0.103559114, z: 0.026468422, w: 0.9797735}
+        inSlope: {x: -0.105602406, y: 0.10986834, z: 0.099398166, w: -0.009502685}
+        outSlope: {x: -0.10625521, y: 0.11048714, z: 0.09998679, w: -0.009059906}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.5
+        value: {x: -0.27705482, y: 0.01731467, z: 0.13371484, w: 0.951347}
+        inSlope: {x: -0.3685156, y: 0.4102439, z: 0.3563564, w: -0.1648267}
+        outSlope: {x: -0.36851564, y: 0.41010478, z: 0.35623708, w: -0.1648267}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.875
+        value: {x: -0.35070607, y: 0.10728373, z: 0.21045043, w: 0.9062042}
+        inSlope: {x: -0.0060399156, y: 0.011722317, z: 0.0075499006, w: -0.0054041566}
+        outSlope: {x: -0.005687986, y: 0.011307852, z: 0.007169587, w: -0.0052452087}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.75
+        value: {x: -0.29358974, y: 0.05897184, z: 0.14023346, w: 0.94374883}
+        inSlope: {x: 0.05013601, y: -0.04257899, z: -0.060915947, w: 0.027179718}
+        outSlope: {x: 0.049781762, y: -0.042450394, z: -0.06065364, w: 0.027179698}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: -0.28830567, y: 0.05461256, z: 0.13386588, w: 0.9465608}
+        inSlope: {x: 0.009012218, y: -0.0035226298, z: -0.0062942477, w: 0.004291531}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.001/ness_wing_1/ness_wing_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.07254878, y: -0.5083745, z: -0.7369128, w: 0.43960392}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: -0.0038014518, y: 0.004503462, z: 0.0052452087, w: 0.013298458}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.125
+        value: {x: -0.1204813, y: -0.47784203, z: -0.72920495, w: 0.474775}
+        inSlope: {x: 0.04031924, y: -0.023735892, z: -5.2980336E-05, w: -0.013801787}
+        outSlope: {x: 0.040709972, y: -0.024000803, z: -0.00015894572, w: -0.013947487}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.875
+        value: {x: -0.057553455, y: -0.5168039, z: -0.73752093, w: 0.43088767}
+        inSlope: {x: -0.0027616872, y: 0.0027815541, z: 0.00031789724, w: 0.0035762703}
+        outSlope: {x: -0.0031498757, y: 0.002971062, z: 0.000330118, w: 0.0036588076}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: -0.07254878, y: -0.5083745, z: -0.7369128, w: 0.43960392}
+        inSlope: {x: 0.0009490906, y: 0.0012654528, z: 0.0017606294, w: 0.004704182}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.002
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.12747496, y: -0.11569745, z: -0.0064876787, w: 0.98504925}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0.01347065, y: 0.013619661, z: 0.009603798, w: 0.0034570694}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.05243458, y: -0.039764274, z: 0.04634736, w: 0.9967554}
+        inSlope: {x: 0.24716556, y: 0.26366115, z: 0.18740442, w: 0.014901161}
+        outSlope: {x: 0.24726611, y: 0.26370582, z: 0.1874808, w: 0.014841555}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.1666667
+        value: {x: 0.022425916, y: 0.038724743, z: 0.09769791, w: 0.9942095}
+        inSlope: {x: -0.19023289, y: -0.13525599, z: -0.123593934, w: 0.021725887}
+        outSlope: {x: -0.19097328, y: -0.13587873, z: -0.124156475, w: 0.021616617}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.5416667
+        value: {x: -0.122240804, y: -0.07124287, z: -0.004862293, w: 0.98992825}
+        inSlope: {x: -0.4415909, y: -0.31948087, z: -0.2972843, w: -0.078837074}
+        outSlope: {x: -0.4416482, y: -0.31933942, z: -0.29722098, w: -0.07885697}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.875
+        value: {x: -0.20009802, y: -0.13092005, z: -0.06158354, w: 0.9690347}
+        inSlope: {x: -0.01144409, y: -0.0107735535, z: -0.00829256, w: -0.0041127414}
+        outSlope: {x: -0.011026859, y: -0.01052022, z: -0.007987022, w: -0.00423193}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.875
+        value: {x: -0.12843272, y: -0.115903266, z: -0.007209122, w: 0.9848957}
+        inSlope: {x: 0.023320317, y: 0.004246831, z: 0.017428756, w: 0.003695488}
+        outSlope: {x: 0.023066953, y: 0.0042021195, z: 0.017266687, w: 0.003576272}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: -0.12747496, y: -0.11569745, z: -0.0064876787, w: 0.98504925}
+        inSlope: {x: 0.00572204, y: 0.0028610171, z: 0.004537394, w: 0.0014305094}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.002/ness_wing_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.07819264, y: 0.07102208, z: -0.21779735, w: 0.97026086}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0.014305115, y: 0.019506974, z: 0.015085394, w: 0.002861023}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 0.45833334
+        value: {x: -0.009167634, y: 0.16349325, z: -0.1438672, w: 0.975955}
+        inSlope: {x: 0.25000218, y: 0.36250457, z: 0.3065521, w: -0.012874603}
+        outSlope: {x: 0.25012046, y: 0.36263466, z: 0.30674934, w: -0.01335144}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.0833334
+        value: {x: 0.09231303, y: 0.29382476, z: -0.030727696, w: 0.9508949}
+        inSlope: {x: -0.06846191, y: -0.06442072, z: -0.081449814, w: 0.023937257}
+        outSlope: {x: -0.06915628, y: -0.06499886, z: -0.08226558, w: 0.023961063}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.4166667
+        value: {x: -0.017867202, y: 0.181964, z: -0.16347095, w: 0.9694572}
+        inSlope: {x: -0.5645994, y: -0.52343315, z: -0.59022015, w: -0.011265282}
+        outSlope: {x: -0.565001, y: -0.5238227, z: -0.5904437, w: -0.0122615285}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.7083334
+        value: {x: -0.15032494, y: 0.035854988, z: -0.31486705, w: 0.93646973}
+        inSlope: {x: -0.27532238, y: -0.30182517, z: -0.2931527, w: -0.13099398}
+        outSlope: {x: -0.27489653, y: -0.3012219, z: -0.29206267, w: -0.13081229}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.0833335
+        value: {x: -0.16419926, y: 0.015593536, z: -0.32873508, w: 0.9299079}
+        inSlope: {x: 0.07279709, y: 0.04947183, z: 0.09298323, w: 0.045140553}
+        outSlope: {x: 0.072889045, y: 0.049520295, z: 0.093340896, w: 0.04488231}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.75
+        value: {x: -0.08600412, y: 0.066109076, z: -0.22799006, w: 0.9676019}
+        inSlope: {x: 0.073783115, y: 0.048592728, z: 0.09765476, w: 0.026285654}
+        outSlope: {x: 0.07363552, y: 0.04860159, z: 0.09763233, w: 0.02632139}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: -0.07819264, y: 0.07102208, z: -0.21779735, w: 0.97026086}
+        inSlope: {x: 0.0074744313, y: 0.004756446, z: 0.009727469, w: 0.0028610216}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.002/ness_wing_3/ness_wing_4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.7069847, y: 0, z: 0, w: 0.70722884}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: -0.7069847, y: 0, z: 0, w: 0.70722884}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1.3487578E-09, y: 1.3231897, z: -2.2558264E-07}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 3.9512463E-07}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.0416667
+        value: {x: 1.3487578E-09, y: 1.3231897, z: 5.811302E-07}
+        inSlope: {x: 0, y: 0, z: 3.9512474E-07}
+        outSlope: {x: 0, y: 0, z: 3.9512472E-07}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.125
+        value: {x: 1.3487578E-09, y: 1.3231897, z: 6.140573E-07}
+        inSlope: {x: 0, y: 0, z: 3.9512523E-07}
+        outSlope: {x: 0, y: 0, z: 3.9512523E-07}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.1666667
+        value: {x: 1.3487578E-09, y: 1.3231897, z: -5.3025934E-07}
+        inSlope: {x: 0, y: 0, z: -2.7463557E-05}
+        outSlope: {x: 0, y: 0, z: -2.7463548E-05}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.4583333
+        value: {x: 1.3487578E-09, y: 1.3231897, z: 6.53024E-07}
+        inSlope: {x: 0, y: 0, z: 4.056985E-06}
+        outSlope: {x: 0, y: 0, z: 4.0569803E-06}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.5833333
+        value: {x: 1.3487578E-09, y: 1.3231897, z: -3.576305E-07}
+        inSlope: {x: 0, y: 0, z: -8.085249E-06}
+        outSlope: {x: 0, y: 0, z: -8.085252E-06}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583333
+        value: {x: 1.3487578E-09, y: 1.3231897, z: -2.2558264E-07}
+        inSlope: {x: 0, y: 0, z: 3.521277E-07}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6/ness_body_5
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1.0327892E-09, y: 1.018292, z: 7.629394E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 3.1265128E-07}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.7083334
+        value: {x: 1.0327892E-09, y: 1.018292, z: 6.104065E-07}
+        inSlope: {x: 0, y: 0, z: 3.1265142E-07}
+        outSlope: {x: 0, y: 0, z: 3.1265137E-07}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.75
+        value: {x: 1.0327892E-09, y: 1.018292, z: -4.5771313E-07}
+        inSlope: {x: 0, y: 0, z: -2.56349E-05}
+        outSlope: {x: 0, y: 0, z: -2.5634896E-05}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.875
+        value: {x: 1.0327892E-09, y: 1.018292, z: 6.103573E-07}
+        inSlope: {x: 0, y: 0, z: 8.544552E-06}
+        outSlope: {x: 0, y: 0, z: 8.544563E-06}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.25
+        value: {x: 1.0327892E-09, y: 1.018292, z: -4.570834E-07}
+        inSlope: {x: 0, y: 0, z: -2.8465092E-06}
+        outSlope: {x: 0, y: 0, z: -2.8465083E-06}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583333
+        value: {x: 1.0327892E-09, y: 1.018292, z: 7.629394E-08}
+        inSlope: {x: 0, y: 0, z: 7.530063E-07}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6/ness_body_5/ness_body_4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -7.897519E-10, y: 1.3640865, z: -1.5258787E-07}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: -3.2947904E-07}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.0833333
+        value: {x: -7.897519E-10, y: 1.3640865, z: -8.390027E-07}
+        inSlope: {x: 0, y: 0, z: -3.2948006E-07}
+        outSlope: {x: 0, y: 0, z: -3.294799E-07}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.125
+        value: {x: -7.897519E-10, y: 1.3640865, z: 2.2920895E-07}
+        inSlope: {x: 0, y: 0, z: 2.5637042E-05}
+        outSlope: {x: 0, y: 0, z: 2.5637031E-05}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583333
+        value: {x: -7.897519E-10, y: 1.3640865, z: -1.5258787E-07}
+        inSlope: {x: 0, y: 0, z: -4.5815324E-07}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6/ness_body_5/ness_body_4/ness_body_3/ness_body_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -6.013579E-10, y: 1.0451674, z: 2.2737365E-15}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 4.4403276E-07}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.375
+        value: {x: -6.013579E-10, y: 1.0451674, z: 6.1054504E-07}
+        inSlope: {x: 0, y: 0, z: 4.4403268E-07}
+        outSlope: {x: 0, y: 0, z: 4.4403257E-07}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.4166666
+        value: {x: -6.013579E-10, y: 1.0451674, z: -6.101255E-07}
+        inSlope: {x: 0, y: 0, z: -2.9296123E-05}
+        outSlope: {x: 0, y: 0, z: -2.929612E-05}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.75
+        value: {x: -6.013579E-10, y: 1.0451674, z: -7.626118E-07}
+        inSlope: {x: 0, y: 0, z: -4.5746089E-07}
+        outSlope: {x: 0, y: 0, z: -4.5745847E-07}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 1.7916666
+        value: {x: -6.013579E-10, y: 1.0451674, z: 3.0550783E-07}
+        inSlope: {x: 0, y: 0, z: 2.5634898E-05}
+        outSlope: {x: 0, y: 0, z: 2.5634896E-05}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2
+        value: {x: -6.013579E-10, y: 1.0451674, z: -7.6288245E-07}
+        inSlope: {x: 0, y: 0, z: -5.1282705E-06}
+        outSlope: {x: 0, y: 0, z: -5.1282736E-06}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.1666667
+        value: {x: -6.013579E-10, y: 1.0451674, z: 6.1076025E-07}
+        inSlope: {x: 0, y: 0, z: 8.241838E-06}
+        outSlope: {x: 0, y: 0, z: 8.241841E-06}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.25
+        value: {x: -6.013579E-10, y: 1.0451674, z: -4.570905E-07}
+        inSlope: {x: 0, y: 0, z: -1.2814205E-05}
+        outSlope: {x: 0, y: 0, z: -1.2814209E-05}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.6666667
+        value: {x: -6.013579E-10, y: 1.0451674, z: -1.5044499E-07}
+        inSlope: {x: 0, y: 0, z: 7.3594475E-07}
+        outSlope: {x: 0, y: 0, z: 7.35948E-07}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.7083333
+        value: {x: -6.013579E-10, y: 1.0451674, z: 9.940611E-07}
+        inSlope: {x: 0, y: 0, z: 2.7468268E-05}
+        outSlope: {x: 0, y: 0, z: 2.7468253E-05}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.875
+        value: {x: -6.013579E-10, y: 1.0451674, z: -2.2640562E-07}
+        inSlope: {x: 0, y: 0, z: -7.322791E-06}
+        outSlope: {x: 0, y: 0, z: -7.3228E-06}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583333
+        value: {x: -6.013579E-10, y: 1.0451674, z: 2.2737365E-15}
+        inSlope: {x: 0, y: 0, z: 2.7168694E-06}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6/ness_body_5/ness_body_4/ness_body_3/ness_body_2/ness_body_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -2.4795528E-07, y: 2.9767427, z: -2.0861624E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: -5.933994E-08, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.0416667
+        value: {x: -3.6910725E-07, y: 2.9767427, z: -2.0861624E-08}
+        inSlope: {x: -5.9340273E-08, y: 0, z: 0}
+        outSlope: {x: -5.9340262E-08, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.25
+        value: {x: -3.8146968E-07, y: 2.9767427, z: -2.0861624E-08}
+        inSlope: {x: -5.9339744E-08, y: 0, z: 0}
+        outSlope: {x: -5.933973E-08, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.2916667
+        value: {x: 6.484985E-07, y: 2.9767427, z: -2.0861624E-08}
+        inSlope: {x: 2.471919E-05, y: 0, z: 0}
+        outSlope: {x: 2.471919E-05, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.4583333
+        value: {x: -4.768371E-07, y: 2.9767427, z: -2.0861624E-08}
+        inSlope: {x: -6.7520164E-06, y: 0, z: 0}
+        outSlope: {x: -6.752027E-06, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583333
+        value: {x: -2.4795528E-07, y: 2.9767427, z: -2.0861624E-08}
+        inSlope: {x: 4.577646E-07, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.002/ness_wing_3/ness_wing_4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: -0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.01383887, y: 9.634148, z: -2.2331975}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: -0.01383887, y: 9.634148, z: -2.2331975}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -1.2427334E-10, y: 4.3684716, z: -2.5035199E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: -1.2427334E-10, y: 4.3684716, z: -2.5035199E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 9.726226E-10, y: 3.8706124, z: 7.658581E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 9.726226E-10, y: 3.8706124, z: 7.658581E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1.8608259E-11, y: 3.727145, z: 2.2971838E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1.8608259E-11, y: 3.727145, z: 2.2971838E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 2.4911626E-10, y: 3.4708807, z: 3.8674184E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 2.4911626E-10, y: 3.4708807, z: 3.8674184E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -5.0416926E-10, y: 1.7684916, z: 1.5588705E-07}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: -5.0416926E-10, y: 1.7684916, z: 1.5588705E-07}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -2.6456357E-09, y: 1.34623, z: 1.5258787E-07}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: -2.6456357E-09, y: 1.34623, z: 1.5258787E-07}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6/ness_body_5/ness_body_4/ness_body_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1.8608259E-11, y: 3.727145, z: 2.2971838E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1.8608259E-11, y: 3.727145, z: 2.2971838E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -1.9073484E-07, y: 4.303779, z: -7.629394E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: -1.9073484E-07, y: 4.303779, z: -7.629394E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.001/ness_wing_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 7.629394E-08, y: 2.1839318, z: 7.629394E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 7.629394E-08, y: 2.1839318, z: 7.629394E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.001/ness_wing_1/ness_wing_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1.8608259E-11, y: 3.727145, z: 2.2971838E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1.8608259E-11, y: 3.727145, z: 2.2971838E-08}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.002
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -2.2888182E-07, y: 4.013897, z: -1.5258787E-07}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: -2.2888182E-07, y: 4.013897, z: -1.5258787E-07}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.002/ness_wing_3
+  m_ScaleCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 0.99999994, z: 0.99999726}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1, y: 0.99999994, z: 0.99999726}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 0.99999994, z: 0.9999999}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1, y: 0.99999994, z: 0.9999999}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1.0000001, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1, y: 1.0000001, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6/ness_body_5
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6/ness_body_5/ness_body_4
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 0.9999999, z: 0.99999994}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1, y: 0.9999999, z: 0.99999994}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6/ness_body_5/ness_body_4/ness_body_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6/ness_body_5/ness_body_4/ness_body_3/ness_body_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 0.99999994, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1, y: 0.99999994, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_8/ness_body_7/ness_body_6/ness_body_5/ness_body_4/ness_body_3/ness_body_2/ness_body_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 0.99999976, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1, y: 0.99999976, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.9999999, y: 1.0000001, z: 0.99999994}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 0.9999999, y: 1.0000001, z: 0.99999994}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.001/ness_wing_1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1, z: 0.99999994}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1, y: 1, z: 0.99999994}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.001/ness_wing_1/ness_wing_2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 1, y: 1.0000001, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 1, y: 1.0000001, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.002
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.99999994, y: 1, z: 0.99999994}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 0.99999994, y: 1, z: 0.99999994}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.002/ness_wing_3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      - serializedVersion: 2
+        time: 2.9583335
+        value: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: Armature.005/ness_body_11/ness_body_10/ness_body_9/ness_body_9.002/ness_wing_3/ness_wing_4
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - serializedVersion: 2
+      path: 3119417851
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1132643005
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2896846902
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3500003850
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3982383574
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2950434486
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2289504863
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3087085765
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1115187509
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2621283911
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 669357338
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3119417851
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1132643005
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1070757471
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2896846902
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3500003850
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 167630470
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1139305770
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1368195067
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2431944508
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 271343816
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3982383574
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1969043385
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2950434486
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2289504863
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3087085765
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1115187509
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2621283911
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 669357338
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1070757471
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 167630470
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1139305770
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1368195067
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2431944508
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 271343816
+      attribute: 1
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1969043385
+      attribute: 2
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1969043385
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2950434486
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2289504863
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3087085765
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1115187509
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2621283911
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 669357338
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3119417851
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1132643005
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1070757471
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2896846902
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3500003850
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 167630470
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1139305770
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 1368195067
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 2431944508
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 271343816
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3982383574
+      attribute: 3
+      script: {fileID: 0}
+      typeID: 4
+      customType: 0
+      isPPtrCurve: 0
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 2.9583335
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
+  m_Events: []

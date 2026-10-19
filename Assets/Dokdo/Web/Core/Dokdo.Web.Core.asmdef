@@ -1,0 +1,16 @@
+{
+  "name": "Dokdo.Web.Core",
+  "rootNamespace": "Dokdo.Web",
+  "references": [
+    "Dokdo.Runtime.Core"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

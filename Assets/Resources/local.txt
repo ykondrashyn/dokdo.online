@@ -1,0 +1,67 @@
+touchstart,터치해서 시작하기,Touch To Start,觸摸開始,タッチして始める,Berühren um loszulegen,Нажмите  чтобы начать
+warning,경고 : 앱 삭제 시 데이터가 지워질 수 있습니다.,WARNING : Data cannot be recovered once the app is deleted.,警告：刪除應用程序後無法恢復數據。,警告:アプリの削除時にデータが消されることがあります。,Warnung: Daten können beim Löschen von Anwendungen gelöscht werden.,Предупреждение: данные не могут быть восстановлены после удаления приложения.
+garage,선착장,Dock,碼頭,船着場,Pier,пирс
+market,시장,Market,市場,市場,Markt,рынок
+store,상점,Store,商店,商店,Ein Geschäft,магазин
+body,선체,Body,船殼,船体,Rumpf,корпус
+sail,돛,Sail,帆,帆,Segeln,парус
+steer,선회,Steering,車削,旋回,Drehen,поворот
+cannon,대포,Cannon,大砲,大砲,Kanone,пушка
+fishing,낚시,Fishing,釣魚,釣り,Fischen,рыболовный
+upgrade,업그레이드,UPGRADE,升級,アップグレード,Upgrade,апгрейд
+hp,체력,HP,身體素質,体力,HP,HP
+speed,속도,Speed,速度,速度,Speed,Speed
+turn,회전,Turning,迴轉,回転,Turning,Turning
+damage,공격력,Damage,攻擊力,攻撃力,Damage,Damage
+catch,어획량,Catch,捕撈量,漁獲量,Catch,Catch
+nextreset,다음 초기화,Next Reset,接下來初始化,次の初期化,Next Reset,Next Reset
+maxlevel,최대치,MAX LEVEL,最大,最大値,Maximalwert,максимальная
+buy,구매,BUY,購買,購買,Einkauf,покупка
+sell,판매,SELL,拍賣,販売,Verkauf,аукцион
+soldout,재고 부족,SOLD OUT,缺貨,在庫不足,Lagerknappheit,Нет в наличии
+notenough,자원이 없습니다.,NOT ENOUGH,找不到資源,資源がありません。,Ich habe keine Ressourcen.,Не удается найти ресурсы
+tip,팁 : 누르고 있으면 자동으로 판매 또는 구매 할 수 있습니다.,TIP : Hold to Auto Selling or Buying,提示：按住可自動出售或購買。,チップ:押していれば自動で販売、または購入できます。,Chip: Sie können es automatisch verkaufen oder kaufen  wenn Sie es drücken.,Совет. Нажмите и удерживайте  чтобы продать или купить автоматически.
+freecoin,무료 코인,Free Coin,免費硬幣,無料コイン,Kostenlose Münzen,Бесплатные монеты
+noads,모든 광고 제거,ALL Ads Free,移除所有廣告,すべての広告除去,Alle Anzeigen entfernen,Удалить все объявления
+restore,구매 복원,Restore,恢復購買,購買復元,Restaurierung kaufen,Купить резюме
+tu_move,움직이는 법,How to Move,如何移動,動く法,Bewegungsrecht,Как двигаться
+tu_drag1,드래그,DRAG,拖,ドラッグ,Ziehen,лобовое сопротивление
+tu_drag2,드래그 한 방향으로 배가 이동합니다.,Rotate and Move,船沿著你拖動的方向移動。,ドラッグの一方向で船が移動します。,Das Schiff bewegt sich in eine Richtung des Widerstands.,Лодка движется в направлении  которое вы тащили.
+tu_tap1,더블 탭,Double Tap,雙擊,ダブルタブ,Doppelter Tab,Дважды щелкните
+tu_tap2,더블탭 한 방향으로 자동 이동합니다.,Go that way,雙擊自動沿一個方向移動。,ダブルタップ、一方向に自動移動します。,Doppeltippen  automatisch in eine Richtung bewegen.,Двойной щелчок автоматически перемещается в одном направлении.
+tu_mode,플레이 방법,Play Mode,如何玩,プレー方法,Spielmethode,Как играть
+tu_fish1,낚시,Fishing Mode,釣魚,釣り,Fischen,рыболовный
+tu_fish2,점령한 섬 근처에서 자동으로 낚시합니다.,Auto Fishing Near your Island,我們會在被佔領的島嶼附近自動捕魚。,占領した島の近くで自動的に釣りします。,Wir werden automatisch in der Nähe der besetzten Insel fischen.,Мы будем автоматически ловить рыбу вблизи оккупированных островов.
+tu_fight1,전투,Fight Mode,戰鬥,戦闘,Schlacht,бой
+tu_fight2,적이 근처에 있으면 자동으로 공격합니다.,Win and Get Islands,如果敵人在附近，它會自動攻擊。,敵が近くにある場合、自動的に攻撃します。,Wenn sich Feinde in der Nähe befinden  greifen sie automatisch an.,Если враг находится поблизости  он автоматически атакует.
+select_flag,깃발을 선택하세요.,Select Your Flag,請選擇一個標誌。,旗を選択してください。,Bitte wählen Sie eine Flagge.,Выберите логотип.
+start,시작,START,入門,開始,Start,Начало работы
+welcome,점령 성공,Welcome to,佔領成功,占領成功,Erfolgreich besetzt,Профессия успеха
+get,획득,GET,獲得,獲得,Erwerb,получить
+destroy,당신의 배가 파괴되었습니다.,Your Ship was destroyed,你的船被毀了,あなたの船が破壊されました。,Dein Schiff wurde zerstört.,Ваш корабль уничтожен
+goisland,마지막 섬으로 돌아가기,Go To Last Island,回到最後一個島,最後の島に戻る,Zurück zur letzten Insel,Вернуться на последний остров
+restart_ads,+<color=#FFC300FF>30%</color> 체력 회복,+Recovery <color=#FFC300FF>30%</color> HP,+<color=#FFC300FF>30％</color>恢復體力,+<color=#FFC300FF>30%</color>体力回復,+<color=#FFC300FF> 30% </color>Heilung,+<color=#FFC300FF> 30% </color>восстановления
+restart_coin,<color=#FFC300FF>100%</color> 체력 부활,Restart Here with <color=#FFC300FF>100%</color> HP,<color=#FFC300FF>100％</color>復活,<color=#FFC300FF>100%</color>体力復活,<color=#FFC300FF>100% </color> Wiederbelebung der physikalischen Stärke,<color=#FFC300FF>100% </color>  Воскрешение
+cong,축하합니다!,Congratulation!,恭喜！,おめでとうございます!,Herzlichen Glückwunsch!,Поздравляем!
+ending1,모든 섬을 점령하였습니다.,You Got All Islands!,所有的島嶼都被佔領。,全ての島々を占領しました。,Wir besetzten alle Inseln.,Все острова заняты.
+wait,다음 지역으로 이동해보세요!,Please go to the next area!,請去下一個區域！,次のエリアに行ってください！,Bitte gehe in den nächsten Bereich!,Пожалуйста  перейдите к следующей области!
+set_des,경로 지정,Set Destination,指定路徑,経路指定,Routing,Укажите путь
+reward,보상,REWARD,賠償金,補償,Entschädigung,компенсация
+repair,수리 중,Repairing,正在修理,修理中,In Reparatur,ремонтируется
+assistant,조수,Assistant,助理,助手,Assistent,помощник
+marketprice,시세,Market Price,時勢,相場,Marktpreis,Текущая ситуация
+revival,부활,Revival,復活,復活,Auferstehung,воскрешение
+cloud_save,저장하기,Save,保存,保存する,Speichern,Сохранить
+cloud_load,불러오기,Load,加載,呼ぶこと,Anrufen,нагрузка
+cloud_save_success,클라우드 저장에 성공하였습니다.,Cloud Save success!,雲端儲存成功！,クラウドの貯蔵に成功しました。,Erfolgreiche Speicherung der Cloud.,Успех облачного хранения!
+cloud_save_fail,클라우드 저장 실패!,Failed to save to cloud!,無法保存到雲端！,クラウド保存失敗。,Cloud Save fehlgeschlagen.,Не удается сохранить в облаке!
+cloud_load_fail,클라우드 불러오기 실패!,Failed to load!,無法加載！,クラウド読み込み、失敗。,Cloud-Laden  Fehler.,Невозможно загрузить!
+cloud_backup,클라우드 백업,Cloud Back Up,雲備份,クラウドバックアップ,Cloud-Backup,Предоставление облаков
+daily_reward,일일 보상,Daily Reward,每日獎勵,毎日補償,Tägliche Vergütung,Ежедневные награды
+re_reward,재접속 보상,Reconnection reward,重新連結獎勵,再接続補償,Wiederanschlusskompensation,Поднимите награды
+tip1,해적선은 다른 배들보다 빠릅니다.,Pirate ships are faster than other ships.,海盜船比其他船舶要快。,海賊船は他の船より早いです。,Piratenschiffe sind schneller als andere Schiffe.,Corsair быстрее  чем другие корабли.
+tip2,어획량은 점점 줄어듭니다. 섬에 방문하면 초기화 됩니다.,The catch is getting smaller. It is reset when you visit the island.,捕魚量逐漸減少。 訪問島上的話就會變成初始化狀態。,漁獲量はますます小さくなります。 島に訪問したら初期化されます。,Der Fang wird kleiner und kleiner. Sobald Sie die Insel besucht haben  wird sie initialisiert.,Количество рыбной ловли уменьшается. Если вы посетите остров  он будет инициализирован.
+tip3,업데이트는 계속 됩니다. 많은 응원 부탁드립니다.,The update will continue. Please encourage us a lot.,更新將繼續。 請鼓勵我們很多。,アップデートは続きます。 多くの応援お願いします。,Das Update wird fortgesetzt. Vielen Dank für Ihre Unterstützung.,Обновление будет продолжено. Пожалуйста  поощряйте нас много.
+cloud_overwrite,클라우드 데이터에 덮어쓰겠습니까?,Overwrite cloud data. Continue?,重寫雲端數據。繼續？,クラウドデータに上書きか?,Cloud-Daten überschreiben. Fortsetzen?,Перепишите данные облака. Продолжить?
+seagull,갈매기,Seagull,海鷗,カモメ,Möwe,чайка
+heal,회복,Recovery,恢復,回復,Heilung,Recovery

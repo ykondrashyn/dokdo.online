@@ -1,0 +1,5748 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!196 &2
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &10
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 69}
+  - component: {fileID: 207}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &30
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 72}
+  - component: {fileID: 188}
+  - component: {fileID: 242}
+  - component: {fileID: 79}
+  - component: {fileID: 241}
+  - component: {fileID: 240}
+  - component: {fileID: 189}
+  - component: {fileID: 239}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &64
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 75}
+  - component: {fileID: 77}
+  - component: {fileID: 82}
+  - component: {fileID: 78}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &69
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 476, y: 846, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!4 &72
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &75
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!20 &77
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &78
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64}
+  m_Enabled: 1
+--- !u!82 &79
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300008, guid: 9c82dd841c3f7c14ba20a4dfaf7a0c8d,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!104 &81
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!124 &82
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64}
+  m_Enabled: 1
+--- !u!157 &83
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 1
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 112000000, guid: 6cf23afe8c5062542bf7830920c168e8,
+    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 4bd7813cdfc54d545845af71327aaa23,
+    type: 2}
+--- !u!114 &188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3f1a2d47bf9479853f992a9cd99dc9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  MyCurrnetHP:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  MyAmblemN:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  isHidden: 0
+  isTuto: 0
+  noAds: 0
+  AssistantShip_Lv:
+  - currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  - currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  - currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  Seagull_Lv:
+  - currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  - currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  Nessy_Lv:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  CurrentWorld: 0
+  Revival:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  Level_Body:
+    currentCryptoKey: 444444
+    hiddenValue: 444445
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  Level_Sail:
+    currentCryptoKey: 444444
+    hiddenValue: 444445
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  Level_Steering:
+    currentCryptoKey: 444444
+    hiddenValue: 444445
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  Level_Storage:
+    currentCryptoKey: 444444
+    hiddenValue: 444445
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  Level_Cannon:
+    currentCryptoKey: 444444
+    hiddenValue: 444445
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  Level_Fishing:
+    currentCryptoKey: 444444
+    hiddenValue: 444445
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  isAllIsland: 0
+  ReRewardT:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  DeadNum:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  CurrentTier:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  CurrentArenaKill:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  BestArenaKill1:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  BestColloseoKill:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  baseSpeed:
+    currentCryptoKey: 230887
+    hiddenValue:
+      b1: 231
+      b2: 133
+      b3: 3
+      b4: 0
+    hiddenValueOld:
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  SpeedCoeff:
+    currentCryptoKey: 230887
+    hiddenValue:
+      b1: 231
+      b2: 133
+      b3: 3
+      b4: 0
+    hiddenValueOld:
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  baseSteer:
+    currentCryptoKey: 230887
+    hiddenValue:
+      b1: 231
+      b2: 133
+      b3: 3
+      b4: 0
+    hiddenValueOld:
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  steerCoeff:
+    currentCryptoKey: 230887
+    hiddenValue:
+      b1: 231
+      b2: 133
+      b3: 3
+      b4: 0
+    hiddenValueOld:
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  baseMass:
+    currentCryptoKey: 230887
+    hiddenValue:
+      b1: 231
+      b2: 133
+      b3: 3
+      b4: 0
+    hiddenValueOld:
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  massCoeff:
+    currentCryptoKey: 230887
+    hiddenValue:
+      b1: 231
+      b2: 133
+      b3: 3
+      b4: 0
+    hiddenValueOld:
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  rigidAngleDrag:
+    currentCryptoKey: 230887
+    hiddenValue:
+      b1: 231
+      b2: 133
+      b3: 3
+      b4: 0
+    hiddenValueOld:
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  baseHP:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  hpCoeff:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  hpCoeff2:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  baseAtk:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  AtkCoeff:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  coinDay:
+  myResource:
+  - name: Coin
+    type: 0
+    value:
+      currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+  - name: Fish
+    type: 1
+    value:
+      currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+  - name: Wood
+    type: 2
+    value:
+      currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+  - name: Iron
+    type: 3
+    value:
+      currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+  - name: Silver
+    type: 4
+    value:
+      currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+  - name: Gold
+    type: 5
+    value:
+      currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+  - name: Diamond
+    type: 6
+    value:
+      currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+  ResourceType:
+  - {fileID: 21300000, guid: 8ae8bad2cada68540a6fbdc2040607b5, type: 2}
+  - {fileID: 21300000, guid: 6484b262e63810345bdde7a2939e94fb, type: 2}
+  - {fileID: 21300000, guid: 4e20c3dacb642fb4e9f4d51d31fb429c, type: 2}
+  - {fileID: 21300000, guid: fd6f7eff12acb974db1b22ab186a3600, type: 2}
+  - {fileID: 21300000, guid: 8ea5eb29f99b05b4da77cfee412b8f44, type: 2}
+  - {fileID: 21300000, guid: ca8bae5951ed6a2429cf4f2b584d30b6, type: 2}
+  - {fileID: 21300000, guid: cfc4b671f78941b4e838c58c940815f2, type: 2}
+  audios: {fileID: 79}
+  coin1: {fileID: 8300000, guid: bc152c9997c144f4b97063e1d5df231d, type: 3}
+  coin2: {fileID: 8300000, guid: 8fbb11da4efa4e744bbbc40771b87110, type: 3}
+  Nocoin: {fileID: 8300000, guid: e8db8a7ea7bd2264495729034e7e8bc3, type: 3}
+  pop: {fileID: 8300000, guid: 45da9019aa78bd445ae172674f7a11ab, type: 3}
+  neg: {fileID: 8300000, guid: 9ece8741547b51344aa0c6ae952f0188, type: 3}
+  positive: {fileID: 8300000, guid: 9ef713eed0a45ae49904c66ff4c4b3c2, type: 3}
+  positive2: {fileID: 8300000, guid: cf8010bffc5d9c4409551ecf3f932d92, type: 3}
+  positive3: {fileID: 8300000, guid: fb8d69885ba3cae46b7ac9dcba0ff0fd, type: 3}
+  FxOn: 1
+  BgmOn: 1
+  Mixer: {fileID: 24100000, guid: 9c82dd841c3f7c14ba20a4dfaf7a0c8d, type: 2}
+  CurrentIsland: {fileID: 0}
+  LastIslandNumber:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  WorldLast1:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  WorldLast2:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  TargetIslandNumber:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  ResetMarketTime:
+    currentCryptoKey: 230887
+    hiddenValue:
+      b1: 231
+      b2: 133
+      b3: 3
+      b4: 0
+    hiddenValueOld:
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  ResetMarketPeriod:
+    currentCryptoKey: 230887
+    hiddenValue:
+      b1: 231
+      b2: 133
+      b3: 3
+      b4: 0
+    hiddenValueOld:
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  MarketAdsTime:
+    currentCryptoKey: 230887
+    hiddenValue:
+      b1: 231
+      b2: 133
+      b3: 3
+      b4: 0
+    hiddenValueOld:
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  freeCoinTime:
+    currentCryptoKey: 230887
+    hiddenValue:
+      b1: 231
+      b2: 133
+      b3: 3
+      b4: 0
+    hiddenValueOld:
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  freeCoinResetPeriod:
+    currentCryptoKey: 230887
+    hiddenValue:
+      b1: 231
+      b2: 133
+      b3: 3
+      b4: 0
+    hiddenValueOld:
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+  IslandDone: 0100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  IslandGoods:
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  IslandGoodsDefault:
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 444444
+        hiddenValue: 444444
+        inited: 1
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  - goods:
+    - ID: Fish
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Wood
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Iron
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Silver
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Gold
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+    - ID: Diamod
+      value:
+        currentCryptoKey: 0
+        hiddenValue: 0
+        inited: 0
+        fakeValue: 0
+        fakeValueActive: 0
+  isNearIsland: 0
+  Sail_Flag_Player:
+  - {fileID: 2100000, guid: acc00cd2db2876648bd9b3c12a829260, type: 2}
+  - {fileID: 2100000, guid: 39fe3c828007c8e41b98d2cf190cb039, type: 2}
+  - {fileID: 2100000, guid: 2a691549d91b1dd499991c5323f8d6b6, type: 2}
+  - {fileID: 2100000, guid: 7bbf3685c29c86b4cbdd1ea1991a16f1, type: 2}
+  - {fileID: 2100000, guid: c69026c5d055e9c4e8f2b0af48e67415, type: 2}
+  - {fileID: 2100000, guid: 9b8297b91f2810a4db3427387f2dceb5, type: 2}
+  Sail_Flag_Enemy:
+  - {fileID: 2100000, guid: 222601bb9d230454f8f974c6cd06d05f, type: 2}
+  - {fileID: 2100000, guid: a394e114c8f15a14481050f8beb32702, type: 2}
+  - {fileID: 2100000, guid: c9f5e99d21f17304eb1b0832d44422fb, type: 2}
+  - {fileID: 2100000, guid: cb379026fa74a3b4bbc09379986f1976, type: 2}
+  - {fileID: 2100000, guid: c548ec195f0657b4ababf1d8ccdfd8ed, type: 2}
+  MarketPrice:
+  - p:
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+  - p:
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+  - p:
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+  - p:
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+  - p:
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+  - p:
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+    - currentCryptoKey: 444444
+      hiddenValue: 444444
+      inited: 1
+      fakeValue: 0
+      fakeValueActive: 0
+  IslandName:
+  - Crocodile
+  - Crater
+  - DUNKIN
+  - LunarBlade
+  - Turtles
+  - The Tower
+  - Black & White
+  - 2PARK
+  - CCTAN
+  - Blue House
+  - WINE
+  - Hing
+  - PO
+  - DJ Jelly
+  - OCTO
+  - Ice Americano
+  - ChristMas
+  - BEA
+  - Ring Of Tim
+  - King's Land
+  - Red Castle
+  - ctrlCV
+  - JAY
+  - WHALEs
+  - Land
+  - Castle WHITE
+  - CATS
+  - Liberty
+  - PISA
+  - F.Doumo
+  - M.Doumo
+  - Murano
+  - Rialto
+  - Hands
+  - Angel
+  - Big Fountain
+  - Blue House
+  - Little Fountain
+  - New South
+  - West Gate
+  - New West
+  - Arch
+  - New North
+  - New East
+  - East Gate
+  - City Hall
+  - Plaza
+  isRevived: 0
+  pickboat: 0
+  currentday:
+    currentCryptoKey: 444444
+    hiddenValue: 444444
+    inited: 1
+    fakeValue: 0
+    fakeValueActive: 0
+--- !u!114 &189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e3b730c6f9cba7c9be5c413c1aa7877, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Language:
+  words:
+  - lang:
+    - touchstart
+    - "\uD130\uCE58\uD574\uC11C \uC2DC\uC791\uD558\uAE30"
+    - Touch To Start
+    - "\u89F8\u6478\u958B\u59CB"
+    - "\u30BF\u30C3\u30C1\u3057\u3066\u59CB\u3081\u308B"
+    - "Ber\xFChren um loszulegen"
+    - "\u041D\u0430\u0436\u043C\u0438\u0442\u0435  \u0447\u0442\u043E\u0431\u044B
+      \u043D\u0430\u0447\u0430\u0442\u044C\r"
+  - lang:
+    - warning
+    - "\uACBD\uACE0 : \uC571 \uC0AD\uC81C \uC2DC \uB370\uC774\uD130\uAC00 \uC9C0\uC6CC\uC9C8
+      \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    - 'WARNING : Data cannot be recovered once the app is deleted.'
+    - "\u8B66\u544A\uFF1A\u522A\u9664\u61C9\u7528\u7A0B\u5E8F\u5F8C\u7121\u6CD5\u6062\u5FA9\u6578\u64DA\u3002"
+    - "\u8B66\u544A:\u30A2\u30D7\u30EA\u306E\u524A\u9664\u6642\u306B\u30C7\u30FC\u30BF\u304C\u6D88\u3055\u308C\u308B\u3053\u3068\u304C\u3042\u308A\u307E\u3059\u3002"
+    - "Warnung: Daten k\xF6nnen beim L\xF6schen von Anwendungen gel\xF6scht werden."
+    - "\u041F\u0440\u0435\u0434\u0443\u043F\u0440\u0435\u0436\u0434\u0435\u043D\u0438\u0435:
+      \u0434\u0430\u043D\u043D\u044B\u0435 \u043D\u0435 \u043C\u043E\u0433\u0443\u0442
+      \u0431\u044B\u0442\u044C \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u044B
+      \u043F\u043E\u0441\u043B\u0435 \u0443\u0434\u0430\u043B\u0435\u043D\u0438\u044F
+      \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u044F.\r"
+  - lang:
+    - garage
+    - "\uC120\uCC29\uC7A5"
+    - Dock
+    - "\u78BC\u982D"
+    - "\u8239\u7740\u5834"
+    - Pier
+    - "\u043F\u0438\u0440\u0441\r"
+  - lang:
+    - market
+    - "\uC2DC\uC7A5"
+    - Market
+    - "\u5E02\u5834"
+    - "\u5E02\u5834"
+    - Markt
+    - "\u0440\u044B\u043D\u043E\u043A\r"
+  - lang:
+    - store
+    - "\uC0C1\uC810"
+    - Store
+    - "\u5546\u5E97"
+    - "\u5546\u5E97"
+    - "Ein Gesch\xE4ft"
+    - "\u043C\u0430\u0433\u0430\u0437\u0438\u043D\r"
+  - lang:
+    - body
+    - "\uC120\uCCB4"
+    - Body
+    - "\u8239\u6BBC"
+    - "\u8239\u4F53"
+    - Rumpf
+    - "\u043A\u043E\u0440\u043F\u0443\u0441\r"
+  - lang:
+    - sail
+    - "\uB3DB"
+    - Sail
+    - "\u5E06"
+    - "\u5E06"
+    - Segeln
+    - "\u043F\u0430\u0440\u0443\u0441\r"
+  - lang:
+    - steer
+    - "\uC120\uD68C"
+    - Steering
+    - "\u8ECA\u524A"
+    - "\u65CB\u56DE"
+    - Drehen
+    - "\u043F\u043E\u0432\u043E\u0440\u043E\u0442\r"
+  - lang:
+    - cannon
+    - "\uB300\uD3EC"
+    - Cannon
+    - "\u5927\u7832"
+    - "\u5927\u7832"
+    - Kanone
+    - "\u043F\u0443\u0448\u043A\u0430\r"
+  - lang:
+    - fishing
+    - "\uB09A\uC2DC"
+    - Fishing
+    - "\u91E3\u9B5A"
+    - "\u91E3\u308A"
+    - Fischen
+    - "\u0440\u044B\u0431\u043E\u043B\u043E\u0432\u043D\u044B\u0439\r"
+  - lang:
+    - upgrade
+    - "\uC5C5\uADF8\uB808\uC774\uB4DC"
+    - UPGRADE
+    - "\u5347\u7D1A"
+    - "\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9"
+    - Upgrade
+    - "\u0430\u043F\u0433\u0440\u0435\u0439\u0434\r"
+  - lang:
+    - hp
+    - "\uCCB4\uB825"
+    - HP
+    - "\u8EAB\u9AD4\u7D20\u8CEA"
+    - "\u4F53\u529B"
+    - HP
+    - "HP\r"
+  - lang:
+    - speed
+    - "\uC18D\uB3C4"
+    - Speed
+    - "\u901F\u5EA6"
+    - "\u901F\u5EA6"
+    - Speed
+    - "Speed\r"
+  - lang:
+    - turn
+    - "\uD68C\uC804"
+    - Turning
+    - "\u8FF4\u8F49"
+    - "\u56DE\u8EE2"
+    - Turning
+    - "Turning\r"
+  - lang:
+    - damage
+    - "\uACF5\uACA9\uB825"
+    - Damage
+    - "\u653B\u64CA\u529B"
+    - "\u653B\u6483\u529B"
+    - Damage
+    - "Damage\r"
+  - lang:
+    - catch
+    - "\uC5B4\uD68D\uB7C9"
+    - Catch
+    - "\u6355\u6488\u91CF"
+    - "\u6F01\u7372\u91CF"
+    - Catch
+    - "Catch\r"
+  - lang:
+    - nextreset
+    - "\uB2E4\uC74C \uCD08\uAE30\uD654"
+    - Next Reset
+    - "\u63A5\u4E0B\u4F86\u521D\u59CB\u5316"
+    - "\u6B21\u306E\u521D\u671F\u5316"
+    - Next Reset
+    - "Next Reset\r"
+  - lang:
+    - maxlevel
+    - "\uCD5C\uB300\uCE58"
+    - MAX LEVEL
+    - "\u6700\u5927"
+    - "\u6700\u5927\u5024"
+    - Maximalwert
+    - "\u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u0430\u044F\r"
+  - lang:
+    - buy
+    - "\uAD6C\uB9E4"
+    - BUY
+    - "\u8CFC\u8CB7"
+    - "\u8CFC\u8CB7"
+    - Einkauf
+    - "\u043F\u043E\u043A\u0443\u043F\u043A\u0430\r"
+  - lang:
+    - sell
+    - "\uD310\uB9E4"
+    - SELL
+    - "\u62CD\u8CE3"
+    - "\u8CA9\u58F2"
+    - Verkauf
+    - "\u0430\u0443\u043A\u0446\u0438\u043E\u043D\r"
+  - lang:
+    - soldout
+    - "\uC7AC\uACE0 \uBD80\uC871"
+    - SOLD OUT
+    - "\u7F3A\u8CA8"
+    - "\u5728\u5EAB\u4E0D\u8DB3"
+    - Lagerknappheit
+    - "\u041D\u0435\u0442 \u0432 \u043D\u0430\u043B\u0438\u0447\u0438\u0438\r"
+  - lang:
+    - notenough
+    - "\uC790\uC6D0\uC774 \uC5C6\uC2B5\uB2C8\uB2E4."
+    - NOT ENOUGH
+    - "\u627E\u4E0D\u5230\u8CC7\u6E90"
+    - "\u8CC7\u6E90\u304C\u3042\u308A\u307E\u305B\u3093\u3002"
+    - Ich habe keine Ressourcen.
+    - "\u041D\u0435 \u0443\u0434\u0430\u0435\u0442\u0441\u044F \u043D\u0430\u0439\u0442\u0438
+      \u0440\u0435\u0441\u0443\u0440\u0441\u044B\r"
+  - lang:
+    - tip
+    - "\uD301 : \uB204\uB974\uACE0 \uC788\uC73C\uBA74 \uC790\uB3D9\uC73C\uB85C \uD310\uB9E4
+      \uB610\uB294 \uAD6C\uB9E4 \uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+    - 'TIP : Hold to Auto Selling or Buying'
+    - "\u63D0\u793A\uFF1A\u6309\u4F4F\u53EF\u81EA\u52D5\u51FA\u552E\u6216\u8CFC\u8CB7\u3002"
+    - "\u30C1\u30C3\u30D7:\u62BC\u3057\u3066\u3044\u308C\u3070\u81EA\u52D5\u3067\u8CA9\u58F2\u3001\u307E\u305F\u306F\u8CFC\u5165\u3067\u304D\u307E\u3059\u3002"
+    - "Chip: Sie k\xF6nnen es automatisch verkaufen oder kaufen  wenn Sie es dr\xFCcken."
+    - "\u0421\u043E\u0432\u0435\u0442. \u041D\u0430\u0436\u043C\u0438\u0442\u0435
+      \u0438 \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0439\u0442\u0435\x20
+      \u0447\u0442\u043E\u0431\u044B \u043F\u0440\u043E\u0434\u0430\u0442\u044C \u0438\u043B\u0438
+      \u043A\u0443\u043F\u0438\u0442\u044C \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438.\r"
+  - lang:
+    - freecoin
+    - "\uBB34\uB8CC \uCF54\uC778"
+    - Free Coin
+    - "\u514D\u8CBB\u786C\u5E63"
+    - "\u7121\u6599\u30B3\u30A4\u30F3"
+    - "Kostenlose M\xFCnzen"
+    - "\u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u044B\u0435 \u043C\u043E\u043D\u0435\u0442\u044B\r"
+  - lang:
+    - noads
+    - "\uBAA8\uB4E0 \uAD11\uACE0 \uC81C\uAC70"
+    - ALL Ads Free
+    - "\u79FB\u9664\u6240\u6709\u5EE3\u544A"
+    - "\u3059\u3079\u3066\u306E\u5E83\u544A\u9664\u53BB"
+    - Alle Anzeigen entfernen
+    - "\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u0432\u0441\u0435 \u043E\u0431\u044A\u044F\u0432\u043B\u0435\u043D\u0438\u044F\r"
+  - lang:
+    - restore
+    - "\uAD6C\uB9E4 \uBCF5\uC6D0"
+    - Restore
+    - "\u6062\u5FA9\u8CFC\u8CB7"
+    - "\u8CFC\u8CB7\u5FA9\u5143"
+    - Restaurierung kaufen
+    - "\u041A\u0443\u043F\u0438\u0442\u044C \u0440\u0435\u0437\u044E\u043C\u0435\r"
+  - lang:
+    - tu_move
+    - "\uC6C0\uC9C1\uC774\uB294 \uBC95"
+    - How to Move
+    - "\u5982\u4F55\u79FB\u52D5"
+    - "\u52D5\u304F\u6CD5"
+    - Bewegungsrecht
+    - "\u041A\u0430\u043A \u0434\u0432\u0438\u0433\u0430\u0442\u044C\u0441\u044F\r"
+  - lang:
+    - tu_drag1
+    - "\uB4DC\uB798\uADF8"
+    - DRAG
+    - "\u62D6"
+    - "\u30C9\u30E9\u30C3\u30B0"
+    - Ziehen
+    - "\u043B\u043E\u0431\u043E\u0432\u043E\u0435 \u0441\u043E\u043F\u0440\u043E\u0442\u0438\u0432\u043B\u0435\u043D\u0438\u0435\r"
+  - lang:
+    - tu_drag2
+    - "\uB4DC\uB798\uADF8 \uD55C \uBC29\uD5A5\uC73C\uB85C \uBC30\uAC00 \uC774\uB3D9\uD569\uB2C8\uB2E4."
+    - Rotate and Move
+    - "\u8239\u6CBF\u8457\u4F60\u62D6\u52D5\u7684\u65B9\u5411\u79FB\u52D5\u3002"
+    - "\u30C9\u30E9\u30C3\u30B0\u306E\u4E00\u65B9\u5411\u3067\u8239\u304C\u79FB\u52D5\u3057\u307E\u3059\u3002"
+    - Das Schiff bewegt sich in eine Richtung des Widerstands.
+    - "\u041B\u043E\u0434\u043A\u0430 \u0434\u0432\u0438\u0436\u0435\u0442\u0441\u044F
+      \u0432 \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0438\x20
+      \u043A\u043E\u0442\u043E\u0440\u043E\u0435 \u0432\u044B \u0442\u0430\u0449\u0438\u043B\u0438.\r"
+  - lang:
+    - tu_tap1
+    - "\uB354\uBE14 \uD0ED"
+    - Double Tap
+    - "\u96D9\u64CA"
+    - "\u30C0\u30D6\u30EB\u30BF\u30D6"
+    - Doppelter Tab
+    - "\u0414\u0432\u0430\u0436\u0434\u044B \u0449\u0435\u043B\u043A\u043D\u0438\u0442\u0435\r"
+  - lang:
+    - tu_tap2
+    - "\uB354\uBE14\uD0ED \uD55C \uBC29\uD5A5\uC73C\uB85C \uC790\uB3D9 \uC774\uB3D9\uD569\uB2C8\uB2E4."
+    - Go that way
+    - "\u96D9\u64CA\u81EA\u52D5\u6CBF\u4E00\u500B\u65B9\u5411\u79FB\u52D5\u3002"
+    - "\u30C0\u30D6\u30EB\u30BF\u30C3\u30D7\u3001\u4E00\u65B9\u5411\u306B\u81EA\u52D5\u79FB\u52D5\u3057\u307E\u3059\u3002"
+    - Doppeltippen  automatisch in eine Richtung bewegen.
+    - "\u0414\u0432\u043E\u0439\u043D\u043E\u0439 \u0449\u0435\u043B\u0447\u043E\u043A
+      \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438
+      \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0430\u0435\u0442\u0441\u044F \u0432
+      \u043E\u0434\u043D\u043E\u043C \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0438.\r"
+  - lang:
+    - tu_mode
+    - "\uD50C\uB808\uC774 \uBC29\uBC95"
+    - Play Mode
+    - "\u5982\u4F55\u73A9"
+    - "\u30D7\u30EC\u30FC\u65B9\u6CD5"
+    - Spielmethode
+    - "\u041A\u0430\u043A \u0438\u0433\u0440\u0430\u0442\u044C\r"
+  - lang:
+    - tu_fish1
+    - "\uB09A\uC2DC"
+    - Fishing Mode
+    - "\u91E3\u9B5A"
+    - "\u91E3\u308A"
+    - Fischen
+    - "\u0440\u044B\u0431\u043E\u043B\u043E\u0432\u043D\u044B\u0439\r"
+  - lang:
+    - tu_fish2
+    - "\uC810\uB839\uD55C \uC12C \uADFC\uCC98\uC5D0\uC11C \uC790\uB3D9\uC73C\uB85C
+      \uB09A\uC2DC\uD569\uB2C8\uB2E4."
+    - Auto Fishing Near your Island
+    - "\u6211\u5011\u6703\u5728\u88AB\u4F54\u9818\u7684\u5CF6\u5DBC\u9644\u8FD1\u81EA\u52D5\u6355\u9B5A\u3002"
+    - "\u5360\u9818\u3057\u305F\u5CF6\u306E\u8FD1\u304F\u3067\u81EA\u52D5\u7684\u306B\u91E3\u308A\u3057\u307E\u3059\u3002"
+    - "Wir werden automatisch in der N\xE4he der besetzten Insel fischen."
+    - "\u041C\u044B \u0431\u0443\u0434\u0435\u043C \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438
+      \u043B\u043E\u0432\u0438\u0442\u044C \u0440\u044B\u0431\u0443 \u0432\u0431\u043B\u0438\u0437\u0438
+      \u043E\u043A\u043A\u0443\u043F\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0445
+      \u043E\u0441\u0442\u0440\u043E\u0432\u043E\u0432.\r"
+  - lang:
+    - tu_fight1
+    - "\uC804\uD22C"
+    - Fight Mode
+    - "\u6230\u9B25"
+    - "\u6226\u95D8"
+    - Schlacht
+    - "\u0431\u043E\u0439\r"
+  - lang:
+    - tu_fight2
+    - "\uC801\uC774 \uADFC\uCC98\uC5D0 \uC788\uC73C\uBA74 \uC790\uB3D9\uC73C\uB85C
+      \uACF5\uACA9\uD569\uB2C8\uB2E4."
+    - Win and Get Islands
+    - "\u5982\u679C\u6575\u4EBA\u5728\u9644\u8FD1\uFF0C\u5B83\u6703\u81EA\u52D5\u653B\u64CA\u3002"
+    - "\u6575\u304C\u8FD1\u304F\u306B\u3042\u308B\u5834\u5408\u3001\u81EA\u52D5\u7684\u306B\u653B\u6483\u3057\u307E\u3059\u3002"
+    - "Wenn sich Feinde in der N\xE4he befinden  greifen sie automatisch an."
+    - "\u0415\u0441\u043B\u0438 \u0432\u0440\u0430\u0433 \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F
+      \u043F\u043E\u0431\u043B\u0438\u0437\u043E\u0441\u0442\u0438  \u043E\u043D
+      \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438
+      \u0430\u0442\u0430\u043A\u0443\u0435\u0442.\r"
+  - lang:
+    - select_flag
+    - "\uAE43\uBC1C\uC744 \uC120\uD0DD\uD558\uC138\uC694."
+    - Select Your Flag
+    - "\u8ACB\u9078\u64C7\u4E00\u500B\u6A19\u8A8C\u3002"
+    - "\u65D7\u3092\u9078\u629E\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+    - "Bitte w\xE4hlen Sie eine Flagge."
+    - "\u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u043B\u043E\u0433\u043E\u0442\u0438\u043F.\r"
+  - lang:
+    - start
+    - "\uC2DC\uC791"
+    - START
+    - "\u5165\u9580"
+    - "\u958B\u59CB"
+    - Start
+    - "\u041D\u0430\u0447\u0430\u043B\u043E \u0440\u0430\u0431\u043E\u0442\u044B\r"
+  - lang:
+    - welcome
+    - "\uC810\uB839 \uC131\uACF5"
+    - Welcome to
+    - "\u4F54\u9818\u6210\u529F"
+    - "\u5360\u9818\u6210\u529F"
+    - Erfolgreich besetzt
+    - "\u041F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u044F \u0443\u0441\u043F\u0435\u0445\u0430\r"
+  - lang:
+    - get
+    - "\uD68D\uB4DD"
+    - GET
+    - "\u7372\u5F97"
+    - "\u7372\u5F97"
+    - Erwerb
+    - "\u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\r"
+  - lang:
+    - destroy
+    - "\uB2F9\uC2E0\uC758 \uBC30\uAC00 \uD30C\uAD34\uB418\uC5C8\uC2B5\uB2C8\uB2E4."
+    - Your Ship was destroyed
+    - "\u4F60\u7684\u8239\u88AB\u6BC0\u4E86"
+    - "\u3042\u306A\u305F\u306E\u8239\u304C\u7834\u58CA\u3055\u308C\u307E\u3057\u305F\u3002"
+    - "Dein Schiff wurde zerst\xF6rt."
+    - "\u0412\u0430\u0448 \u043A\u043E\u0440\u0430\u0431\u043B\u044C \u0443\u043D\u0438\u0447\u0442\u043E\u0436\u0435\u043D\r"
+  - lang:
+    - goisland
+    - "\uB9C8\uC9C0\uB9C9 \uC12C\uC73C\uB85C \uB3CC\uC544\uAC00\uAE30"
+    - Go To Last Island
+    - "\u56DE\u5230\u6700\u5F8C\u4E00\u500B\u5CF6"
+    - "\u6700\u5F8C\u306E\u5CF6\u306B\u623B\u308B"
+    - "Zur\xFCck zur letzten Insel"
+    - "\u0412\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F \u043D\u0430 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0439
+      \u043E\u0441\u0442\u0440\u043E\u0432\r"
+  - lang:
+    - restart_ads
+    - "+<color=#FFC300FF>30%</color> \uCCB4\uB825 \uD68C\uBCF5"
+    - +Recovery <color=#FFC300FF>30%</color> HP
+    - "+<color=#FFC300FF>30\uFF05</color>\u6062\u5FA9\u9AD4\u529B"
+    - "+<color=#FFC300FF>30%</color>\u4F53\u529B\u56DE\u5FA9"
+    - +<color=#FFC300FF> 30% </color>Heilung
+    - "+<color=#FFC300FF> 30% </color>\u0432\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F\r"
+  - lang:
+    - restart_coin
+    - "<color=#FFC300FF>100%</color> \uCCB4\uB825 \uBD80\uD65C"
+    - Restart Here with <color=#FFC300FF>100%</color> HP
+    - "<color=#FFC300FF>100\uFF05</color>\u5FA9\u6D3B"
+    - "<color=#FFC300FF>100%</color>\u4F53\u529B\u5FA9\u6D3B"
+    - "<color=#FFC300FF>100% </color> Wiederbelebung der physikalischen St\xE4rke"
+    - "<color=#FFC300FF>100% </color>  \u0412\u043E\u0441\u043A\u0440\u0435\u0448\u0435\u043D\u0438\u0435\r"
+  - lang:
+    - cong
+    - "\uCD95\uD558\uD569\uB2C8\uB2E4!"
+    - Congratulation!
+    - "\u606D\u559C\uFF01"
+    - "\u304A\u3081\u3067\u3068\u3046\u3054\u3056\u3044\u307E\u3059!"
+    - "Herzlichen Gl\xFCckwunsch!"
+    - "\u041F\u043E\u0437\u0434\u0440\u0430\u0432\u043B\u044F\u0435\u043C!\r"
+  - lang:
+    - ending1
+    - "\uBAA8\uB4E0 \uC12C\uC744 \uC810\uB839\uD558\uC600\uC2B5\uB2C8\uB2E4."
+    - You Got All Islands!
+    - "\u6240\u6709\u7684\u5CF6\u5DBC\u90FD\u88AB\u4F54\u9818\u3002"
+    - "\u5168\u3066\u306E\u5CF6\u3005\u3092\u5360\u9818\u3057\u307E\u3057\u305F\u3002"
+    - Wir besetzten alle Inseln.
+    - "\u0412\u0441\u0435 \u043E\u0441\u0442\u0440\u043E\u0432\u0430 \u0437\u0430\u043D\u044F\u0442\u044B.\r"
+  - lang:
+    - wait
+    - "\uB2E4\uC74C \uC9C0\uC5ED\uC73C\uB85C \uC774\uB3D9\uD574\uBCF4\uC138\uC694!"
+    - Please go to the next area!
+    - "\u8ACB\u53BB\u4E0B\u4E00\u500B\u5340\u57DF\uFF01"
+    - "\u6B21\u306E\u30A8\u30EA\u30A2\u306B\u884C\u3063\u3066\u304F\u3060\u3055\u3044\uFF01"
+    - "Bitte gehe in den n\xE4chsten Bereich!"
+    - "\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430  \u043F\u0435\u0440\u0435\u0439\u0434\u0438\u0442\u0435
+      \u043A \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439 \u043E\u0431\u043B\u0430\u0441\u0442\u0438!\r"
+  - lang:
+    - set_des
+    - "\uACBD\uB85C \uC9C0\uC815"
+    - Set Destination
+    - "\u6307\u5B9A\u8DEF\u5F91"
+    - "\u7D4C\u8DEF\u6307\u5B9A"
+    - Routing
+    - "\u0423\u043A\u0430\u0436\u0438\u0442\u0435 \u043F\u0443\u0442\u044C\r"
+  - lang:
+    - reward
+    - "\uBCF4\uC0C1"
+    - REWARD
+    - "\u8CE0\u511F\u91D1"
+    - "\u88DC\u511F"
+    - "Entsch\xE4digung"
+    - "\u043A\u043E\u043C\u043F\u0435\u043D\u0441\u0430\u0446\u0438\u044F\r"
+  - lang:
+    - repair
+    - "\uC218\uB9AC \uC911"
+    - Repairing
+    - "\u6B63\u5728\u4FEE\u7406"
+    - "\u4FEE\u7406\u4E2D"
+    - In Reparatur
+    - "\u0440\u0435\u043C\u043E\u043D\u0442\u0438\u0440\u0443\u0435\u0442\u0441\u044F\r"
+  - lang:
+    - assistant
+    - "\uC870\uC218"
+    - Assistant
+    - "\u52A9\u7406"
+    - "\u52A9\u624B"
+    - Assistent
+    - "\u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A\r"
+  - lang:
+    - marketprice
+    - "\uC2DC\uC138"
+    - Market Price
+    - "\u6642\u52E2"
+    - "\u76F8\u5834"
+    - Marktpreis
+    - "\u0422\u0435\u043A\u0443\u0449\u0430\u044F \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u044F\r"
+  - lang:
+    - revival
+    - "\uBD80\uD65C"
+    - Revival
+    - "\uF966\u6D3B"
+    - "\u5FA9\u6D3B"
+    - Auferstehung
+    - "\u0432\u043E\u0441\u043A\u0440\u0435\u0448\u0435\u043D\u0438\u0435\r"
+  - lang:
+    - cloud_save
+    - "\uC800\uC7A5\uD558\uAE30"
+    - Save
+    - "\u4FDD\u5B58"
+    - "\u4FDD\u5B58\u3059\u308B"
+    - Speichern
+    - "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C\r"
+  - lang:
+    - cloud_load
+    - "\uBD88\uB7EC\uC624\uAE30"
+    - Load
+    - "\u52A0\u8F09"
+    - "\u547C\u3076\u3053\u3068"
+    - Anrufen
+    - "\u043D\u0430\u0433\u0440\u0443\u0437\u043A\u0430\r"
+  - lang:
+    - cloud_save_success
+    - "\uD074\uB77C\uC6B0\uB4DC \uC800\uC7A5\uC5D0 \uC131\uACF5\uD558\uC600\uC2B5\uB2C8\uB2E4."
+    - Cloud Save success!
+    - "\u96F2\u7AEF\u5132\u5B58\u6210\u529F\uFF01"
+    - "\u30AF\u30E9\u30A6\u30C9\u306E\u8CAF\u8535\u306B\u6210\u529F\u3057\u307E\u3057\u305F\u3002"
+    - Erfolgreiche Speicherung der Cloud.
+    - "\u0423\u0441\u043F\u0435\u0445 \u043E\u0431\u043B\u0430\u0447\u043D\u043E\u0433\u043E
+      \u0445\u0440\u0430\u043D\u0435\u043D\u0438\u044F!\r"
+  - lang:
+    - cloud_save_fail
+    - "\uD074\uB77C\uC6B0\uB4DC \uC800\uC7A5 \uC2E4\uD328!"
+    - Failed to save to cloud!
+    - "\u7121\u6CD5\u4FDD\u5B58\u5230\u96F2\u7AEF\uFF01"
+    - "\u30AF\u30E9\u30A6\u30C9\u4FDD\u5B58\u5931\u6557\u3002"
+    - Cloud Save fehlgeschlagen.
+    - "\u041D\u0435 \u0443\u0434\u0430\u0435\u0442\u0441\u044F \u0441\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C
+      \u0432 \u043E\u0431\u043B\u0430\u043A\u0435!\r"
+  - lang:
+    - cloud_load_fail
+    - "\uD074\uB77C\uC6B0\uB4DC \uBD88\uB7EC\uC624\uAE30 \uC2E4\uD328!"
+    - Failed to load!
+    - "\u7121\u6CD5\u52A0\u8F09\uFF01"
+    - "\u30AF\u30E9\u30A6\u30C9\u8AAD\u307F\u8FBC\u307F\u3001\u5931\u6557\u3002"
+    - Cloud-Laden  Fehler.
+    - "\u041D\u0435\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C!\r"
+  - lang:
+    - cloud_backup
+    - "\uD074\uB77C\uC6B0\uB4DC \uBC31\uC5C5"
+    - Cloud Back Up
+    - "\u96F2\u5099\u4EFD"
+    - "\u30AF\u30E9\u30A6\u30C9\u30D0\u30C3\u30AF\u30A2\u30C3\u30D7"
+    - Cloud-Backup
+    - "\u041F\u0440\u0435\u0434\u043E\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0438\u0435
+      \u043E\u0431\u043B\u0430\u043A\u043E\u0432\r"
+  - lang:
+    - daily_reward
+    - "\uC77C\uC77C \uBCF4\uC0C1"
+    - Daily Reward
+    - "\u6BCF\u65E5\u734E\u52F5"
+    - "\u6BCE\u65E5\u88DC\u511F"
+    - "T\xE4gliche Verg\xFCtung"
+    - "\u0415\u0436\u0435\u0434\u043D\u0435\u0432\u043D\u044B\u0435 \u043D\u0430\u0433\u0440\u0430\u0434\u044B\r"
+  - lang:
+    - re_reward
+    - "\uC7AC\uC811\uC18D \uBCF4\uC0C1"
+    - Reconnection reward
+    - "\u91CD\u65B0\u9023\u7D50\u734E\u52F5"
+    - "\u518D\u63A5\u7D9A\u88DC\u511F"
+    - Wiederanschlusskompensation
+    - "\u041F\u043E\u0434\u043D\u0438\u043C\u0438\u0442\u0435 \u043D\u0430\u0433\u0440\u0430\u0434\u044B\r"
+  - lang:
+    - tip1
+    - "\uD574\uC801\uC120\uC740 \uB2E4\uB978 \uBC30\uB4E4\uBCF4\uB2E4 \uBE60\uB985\uB2C8\uB2E4."
+    - Pirate ships are faster than other ships.
+    - "\u6D77\u76DC\u8239\u6BD4\u5176\u4ED6\u8239\u8236\u8981\u5FEB\u3002"
+    - "\u6D77\u8CCA\u8239\u306F\u4ED6\u306E\u8239\u3088\u308A\u65E9\u3044\u3067\u3059\u3002"
+    - Piratenschiffe sind schneller als andere Schiffe.
+    - "Corsair \u0431\u044B\u0441\u0442\u0440\u0435\u0435  \u0447\u0435\u043C \u0434\u0440\u0443\u0433\u0438\u0435
+      \u043A\u043E\u0440\u0430\u0431\u043B\u0438.\r"
+  - lang:
+    - tip2
+    - "\uC5B4\uD68D\uB7C9\uC740 \uC810\uC810 \uC904\uC5B4\uB4ED\uB2C8\uB2E4. \uC12C\uC5D0
+      \uBC29\uBB38\uD558\uBA74 \uCD08\uAE30\uD654 \uB429\uB2C8\uB2E4."
+    - The catch is getting smaller. It is reset when you visit the island.
+    - "\u6355\u9B5A\u91CF\u9010\u6F38\u6E1B\u5C11\u3002 \u8A2A\u554F\u5CF6\u4E0A\u7684\u8A71\u5C31\u6703\u8B8A\u6210\u521D\u59CB\u5316\u72C0\u614B\u3002"
+    - "\u6F01\u7372\u91CF\u306F\u307E\u3059\u307E\u3059\u5C0F\u3055\u304F\u306A\u308A\u307E\u3059\u3002
+      \u5CF6\u306B\u8A2A\u554F\u3057\u305F\u3089\u521D\u671F\u5316\u3055\u308C\u307E\u3059\u3002"
+    - Der Fang wird kleiner und kleiner. Sobald Sie die Insel besucht haben  wird
+      sie initialisiert.
+    - "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0440\u044B\u0431\u043D\u043E\u0439
+      \u043B\u043E\u0432\u043B\u0438 \u0443\u043C\u0435\u043D\u044C\u0448\u0430\u0435\u0442\u0441\u044F.
+      \u0415\u0441\u043B\u0438 \u0432\u044B \u043F\u043E\u0441\u0435\u0442\u0438\u0442\u0435
+      \u043E\u0441\u0442\u0440\u043E\u0432  \u043E\u043D \u0431\u0443\u0434\u0435\u0442
+      \u0438\u043D\u0438\u0446\u0438\u0430\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D.\r"
+  - lang:
+    - tip3
+    - "\uC5C5\uB370\uC774\uD2B8\uB294 \uACC4\uC18D \uB429\uB2C8\uB2E4. \uB9CE\uC740
+      \uC751\uC6D0 \uBD80\uD0C1\uB4DC\uB9BD\uB2C8\uB2E4."
+    - The update will continue. Please encourage us a lot.
+    - "\u66F4\u65B0\u5C07\u7E7C\u7E8C\u3002 \u8ACB\u9F13\u52F5\u6211\u5011\u5F88\u591A\u3002"
+    - "\u30A2\u30C3\u30D7\u30C7\u30FC\u30C8\u306F\u7D9A\u304D\u307E\u3059\u3002 \u591A\u304F\u306E\u5FDC\u63F4\u304A\u9858\u3044\u3057\u307E\u3059\u3002"
+    - "Das Update wird fortgesetzt. Vielen Dank f\xFCr Ihre Unterst\xFCtzung."
+    - "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435 \u0431\u0443\u0434\u0435\u0442
+      \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0435\u043D\u043E. \u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430\x20
+      \u043F\u043E\u043E\u0449\u0440\u044F\u0439\u0442\u0435 \u043D\u0430\u0441 \u043C\u043D\u043E\u0433\u043E.\r"
+  - lang:
+    - cloud_overwrite
+    - "\uD074\uB77C\uC6B0\uB4DC \uB370\uC774\uD130\uC5D0 \uB36E\uC5B4\uC4F0\uACA0\uC2B5\uB2C8\uAE4C?"
+    - Overwrite cloud data. Continue?
+    - "\u91CD\u5BEB\u96F2\u7AEF\u6578\u64DA\u3002\u7E7C\u7E8C\uFF1F"
+    - "\u30AF\u30E9\u30A6\u30C9\u30C7\u30FC\u30BF\u306B\u4E0A\u66F8\u304D\u304B?"
+    - "Cloud-Daten \xFCberschreiben. Fortsetzen?"
+    - "\u041F\u0435\u0440\u0435\u043F\u0438\u0448\u0438\u0442\u0435 \u0434\u0430\u043D\u043D\u044B\u0435
+      \u043E\u0431\u043B\u0430\u043A\u0430. \u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C?\r"
+  - lang:
+    - seagull
+    - "\uAC08\uB9E4\uAE30"
+    - Seagull
+    - "\u6D77\u9DD7"
+    - "\u30AB\u30E2\u30E1"
+    - "M\xF6we"
+    - "\u0447\u0430\u0439\u043A\u0430\r"
+  - lang:
+    - heal
+    - "\uD68C\uBCF5"
+    - Recovery
+    - "\u6062\u5FA9"
+    - "\u56DE\u5FA9"
+    - Heilung
+    - Recovery
+  currentLangNum: 0
+--- !u!114 &207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9286724eff8c6875b8f6d07652db2587, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed3b718b39f67753833e1a62e674c05, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055ecd01cfa861e5a03c6aa263703eb, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb682a11d459e82cc0e97bd159d1cfd5, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7ef1777a0f205b5d4ca7c0aacb7c42c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  currentfps: 30
+  Show: 0

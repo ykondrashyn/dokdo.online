@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>DOKDO Standalone</title>
+  <link rel="stylesheet" href="TemplateData/standalone.css">
+</head>
+<body>
+<main id="dokdo-app" data-loader="Build/{{{ LOADER_FILENAME }}}"
+  data-data="Build/{{{ DATA_FILENAME }}}" data-framework="Build/{{{ FRAMEWORK_FILENAME }}}"
+  data-code="Build/{{{ CODE_FILENAME }}}" data-company="{{{ COMPANY_NAME }}}"
+  data-product="{{{ PRODUCT_NAME }}}" data-version="{{{ PRODUCT_VERSION }}}">
+  <section id="start-panel" class="panel"><h1>DOKDO</h1>
+    <p>Standalone game · progress stays in this browser.</p>
+    <button id="start-button">Start game</button>
+    <p>Steer with WASD, the mouse, or touch. Use Settings to copy or paste a save.</p>
+  </section>
+  <section id="game-shell" hidden>
+    <canvas id="unity-canvas" width="720" height="1280" tabindex="0" aria-label="DOKDO game"></canvas>
+    <div id="loading-panel" class="panel" role="status"><p>Loading game…</p><progress id="loading-progress" max="1" value="0"></progress></div>
+    <button id="fullscreen-button" aria-label="Full screen">Full screen</button>
+    <div id="orientation-panel" class="panel" hidden>Rotate your device to portrait to continue.</div>
+  </section>
+  <p id="unity-warning" role="status"></p>
+  <section id="error-panel" class="panel" hidden><p id="error-message"></p><button id="retry-button">Retry</button></section>
+  <section id="clipboard-panel" class="panel" role="dialog" aria-modal="true" aria-labelledby="clipboard-title" hidden>
+    <h2 id="clipboard-title">Save transfer</h2><p id="clipboard-help"></p>
+    <textarea id="clipboard-text" aria-label="Save text" spellcheck="false"></textarea>
+    <button id="copy-button">Copy</button><button id="paste-button">Paste</button>
+    <button id="import-button">Import pasted save</button><button id="clipboard-close-button">Close</button>
+  </section>
+  <div id="safe-area-probe" aria-hidden="true"></div>
+</main>
+<script src="TemplateData/standalone.js"></script>
+</body></html>

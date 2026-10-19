@@ -1,0 +1,20 @@
+{
+  "name": "Dokdo.Tests.PlayMode",
+  "rootNamespace": "Dokdo.Tests.PlayMode",
+  "references": [
+    "Dokdo.Runtime.Core",
+    "Dokdo.Tests.Fixtures"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

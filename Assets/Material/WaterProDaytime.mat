@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WaterProDaytime
+  m_Shader: {fileID: 4800000, guid: 36e790055f0546349877d7d34ca3d5b4, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties:
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: e6feee54e2bcc594480ea9674ce5f5d2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FoamTex:
+        m_Texture: {fileID: 2800000, guid: 341133c86a607e246bcee8cac0fe3ea5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Fresnel:
+        m_Texture: {fileID: 2800000, guid: 78f47c46487d7254182670c11487a689, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectiveColor:
+        m_Texture: {fileID: 2800000, guid: 9f3779d698dd0ba459490d804b3afe14, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RefractionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _FoamScale: 0.018
+    - _FoamStrength: 0.22
+    - _ReflDistort: 0
+    - _RefrDistort: 0
+    - _WaterAlpha: 0.94
+    - _WaveScale: 0.02
+    m_Colors:
+    - WaveSpeed: {r: 10, g: 10, b: 10, a: 10}
+    - _BumpMap_ST: {r: 1, g: 1, b: 0, a: 0}
+    - _FoamColor: {r: 0.72, g: 0.88, b: 0.95, a: 1}
+    - _Fresnel_ST: {r: 1, g: 1, b: 0, a: 0}
+    - _HorizonColor: {r: 0.13575952, g: 0.22810712, b: 0.3810788, a: 0}
+    - _MainTex_ST: {r: 1, g: 1, b: 0, a: 0}
+    - _ReflectionTex_ST: {r: 1, g: 1, b: 0, a: 0}
+    - _ReflectiveColorCube_ST: {r: 1, g: 1, b: 0, a: 0}
+    - _ReflectiveColor_ST: {r: 1, g: 1, b: 0, a: 0}
+    - _RefrColor: {r: 0, g: 0.44406688, b: 0.46323532, a: 1}
+    - _RefractionTex_ST: {r: 1, g: 1, b: 0, a: 0}
+    - _WaveOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _WaveScale4: {r: 0.02, g: 0.02, b: 0.008, a: 0.009}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

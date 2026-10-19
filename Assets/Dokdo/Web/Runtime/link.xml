@@ -1,0 +1,83 @@
+<linker>
+  <assembly fullname="Assembly-CSharp">
+    <type fullname="GameManager" preserve="nothing">
+      <field name="Instance" />
+      <field name="CurrentWorld" />
+      <field name="Level_Body" />
+      <field name="Level_Sail" />
+      <field name="Level_Steering" />
+      <field name="MyAmblemN" />
+      <field name="Sail_Flag_Player" />
+      <method name="Save" />
+      <method name="CreateSaveData" />
+      <method name="AddResource" />
+      <field name="myResource" />
+      <method name="ReCalTime" />
+    </type>
+    <type fullname="Item" preserve="nothing">
+      <field name="value" />
+    </type>
+    <type fullname="Boat_Setting" preserve="nothing">
+      <field name="SettingList" />
+      <field name="b" />
+      <field name="h" />
+      <field name="s1" />
+      <field name="s2" />
+      <field name="s3" />
+      <field name="s4" />
+      <field name="Amblem" />
+      <method name="init" />
+    </type>
+    <type fullname="SailSetting" preserve="nothing">
+      <field name="pos1" />
+      <field name="pos2" />
+      <field name="pos3" />
+      <field name="pos4" />
+    </type>
+    <type fullname="ShipController" preserve="nothing">
+      <method name="ReCalTime" />
+      <field name="mousePos" />
+      <field name="myShip" />
+      <field name="isParking" />
+      <field name="isDead" />
+      <field name="isArena" />
+      <field name="IslandRewardPanel" />
+      <field name="DeadPanel" />
+      <field name="Dead_Arena" />
+      <field name="controller" />
+      <field name="isTouch" />
+      <field name="isOuting" />
+      <field name="isDouble" />
+      <field name="doubleclickT" />
+      <field name="v" />
+      <field name="s" />
+    </type>
+    <type fullname="UIManager" preserve="nothing">
+      <field name="hiddenpop" />
+      <field name="ReRewardPanel" />
+      <field name="Loading" />
+    </type>
+    <type fullname="OfflinePopupView" preserve="nothing">
+      <field name="instance" />
+      <field name="popupRoot" />
+      <field name="preloaderRoot" />
+    </type>
+    <type fullname="CameraZoom" preserve="nothing">
+      <field name="SC" />
+      <field name="orthoZoomSpeed" />
+      <field name="MinSize" />
+      <field name="MaxSizePortrait" />
+    </type>
+    <type fullname="ControllerView" preserve="nothing">
+      <field name="mainUICamera" />
+      <field name="handleArea" />
+      <field name="handleMove" />
+      <field name="handleStick" />
+      <field name="pressBool" />
+      <field name="handlePress" />
+    </type>
+    <type fullname="UnityStandardAssets.Water.Water" preserve="nothing">
+      <method name="SetPlanarReflectionEnabled" />
+    </type>
+  </assembly>
+</linker>

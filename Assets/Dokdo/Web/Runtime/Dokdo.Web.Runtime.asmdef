@@ -1,0 +1,20 @@
+{
+  "name": "Dokdo.Web.Runtime",
+  "rootNamespace": "Dokdo.Web",
+  "references": [
+    "Dokdo.Runtime.Core",
+    "Dokdo.Web.Core"
+  ],
+  "includePlatforms": [
+    "Editor",
+    "WebGL"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

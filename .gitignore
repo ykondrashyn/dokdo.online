@@ -1,0 +1,12 @@
+/Library/
+/Temp/
+/Obj/
+/Logs/
+/UserSettings/
+/Builds/
+/.artifacts/
+/.logs/
+*.csproj
+*.sln
+*.slnx
+__pycache__/

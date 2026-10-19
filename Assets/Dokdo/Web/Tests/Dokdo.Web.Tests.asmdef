@@ -1,0 +1,25 @@
+{
+  "name": "Dokdo.Web.Tests",
+  "rootNamespace": "Dokdo.Web.Tests",
+  "references": [
+    "Dokdo.Runtime.Core",
+    "Dokdo.Web.Core",
+    "Dokdo.Web.Runtime",
+    "Dokdo.Web.Editor",
+    "Dokdo.Compatibility"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

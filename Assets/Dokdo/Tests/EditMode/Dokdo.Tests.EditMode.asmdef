@@ -1,0 +1,22 @@
+{
+  "name": "Dokdo.Tests.EditMode",
+  "rootNamespace": "Dokdo.Tests.EditMode",
+  "references": [
+    "Dokdo.Runtime.Core",
+    "Dokdo.Tests.Fixtures"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}
