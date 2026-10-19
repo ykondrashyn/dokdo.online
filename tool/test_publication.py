@@ -14,6 +14,7 @@ class PublicationTests(unittest.TestCase):
             for encoding in ['utf-8','utf-16le']:
                 with self.assertRaises(ValueError):p.validate_player('Build/fixture.wasm',value.encode(encoding))
         p.validate_player('Build/fixture.wasm',b'UnityEditor/il2cpp/file.cpp')
+        p.validate_player('Build/fixture.framework.js',b'FS.mkdir("/home/web_user")};FS.mkdir("/dev")')
 
     def test_water_restore_accepts_only_bounded_animation_phase(self):
         original=b'shader: original\n    - _WaveOffset: {r: 0, g: 0, b: 0, a: 0}\n'

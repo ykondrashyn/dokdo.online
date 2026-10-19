@@ -65,7 +65,7 @@ def validate_player(name, data):
     # Generic user-directory checks only; private infrastructure rules stay
     # outside this repository. Inspect ordinary and UTF-16 diagnostic strings.
     for blob in [data, data.replace(b'\0', b'')]:
-        require(not re.search(rb'/(?:home|Users)/[^/\s\0]+/|[A-Za-z]:\\Users\\', blob),
+        require(not re.search(rb"/(?:home|Users)/[^/\s\0\"']+/|[A-Za-z]:\\Users\\", blob),
                 'Local user directory in player: '+name)
 
 def file_hashes(root, names, validator=validate_file):
