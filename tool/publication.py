@@ -60,13 +60,21 @@ def source_files():
     result.discard(INVENTORY)
     return sorted(result)
 
-def file_hashes(root, names):
+def validate_player(name, data):
+    validate_file(name, data)
+    # Generic user-directory checks only; private infrastructure rules stay
+    # outside this repository. Inspect ordinary and UTF-16 diagnostic strings.
+    for blob in [data, data.replace(b'\0', b'')]:
+        require(not re.search(rb'/(?:home|Users)/[^/\s\0]+/|[A-Za-z]:\\Users\\', blob),
+                'Local user directory in player: '+name)
+
+def file_hashes(root, names, validator=validate_file):
     result = {}
     for name in names:
         safe_name(name); p = root/name
         require(p.is_file() and not p.is_symlink(), 'Missing or nonregular file: '+name)
         require(all(not (root/parent).is_symlink() for parent in PurePosixPath(name).parents), 'Symlink parent: '+name)
-        data = p.read_bytes(); validate_file(name, data); result[name] = sha(data)
+        data = p.read_bytes(); validator(name, data); result[name] = sha(data)
     return result
 
 def inventory():
@@ -162,7 +170,7 @@ def payload_hashes(root):
         subset=[n for n in names if n.startswith(variant+'/')]
         require(len(subset) == 7, 'Incomplete player: '+variant)
     require('index.html' in names, 'Missing capability selector')
-    return file_hashes(root, sorted(names))
+    return file_hashes(root, sorted(names), validate_player)
 
 def acceptance(path, files):
     data=json.loads(path.read_text())
@@ -239,7 +247,7 @@ def verify(directory):
             for item in entries:
                 safe_name(item.filename)
                 require(stat.S_IFMT(item.external_attr >> 16) in (0,stat.S_IFREG), 'Nonregular ZIP member')
-                blob=archive.read(item); validate_file(item.filename,blob)
+                blob=archive.read(item); validate_player(item.filename,blob)
                 require(sha(blob) == manifest['files'][item.filename], 'ZIP checksum mismatch')
     print('Release inventory and checksums: passed')
 

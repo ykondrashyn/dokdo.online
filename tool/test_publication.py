@@ -8,6 +8,13 @@ import zipfile
 import publication as p
 
 class PublicationTests(unittest.TestCase):
+    def test_player_rejects_embedded_user_directories(self):
+        for value in ['/home/fixture/Unity/file.cpp', '/Users/fixture/Unity/file.cpp',
+                      'C:\\Users\\fixture\\Unity\\file.cpp']:
+            for encoding in ['utf-8','utf-16le']:
+                with self.assertRaises(ValueError):p.validate_player('Build/fixture.wasm',value.encode(encoding))
+        p.validate_player('Build/fixture.wasm',b'UnityEditor/il2cpp/file.cpp')
+
     def test_water_restore_accepts_only_bounded_animation_phase(self):
         original=b'shader: original\n    - _WaveOffset: {r: 0, g: 0, b: 0, a: 0}\n'
         animated=original.replace(b'r: 0,',b'r: 0.01,')

@@ -1906,9 +1906,9 @@
     "screenshots/dokdo-war-memorial-seoul.jpg": "068312bf53ab991be4ac7d205e63a071fffdd3e55e19add1362dbd2ed17557bb",
     "tool/browser_check.py": "c209620e139ef0c0eca2815f5624f2c2b5155e031200f2edba6d3e88466f25f5",
     "tool/export-source.py": "441c608b311d6bd2ebe5e8f9a20c09b38fbf8222eebbe996a9745bd2211b8b27",
-    "tool/publication.py": "4d97eae94e2caf1883526eb1f5c188791456b505c7e4d34fc7a09876470c2b5c",
+    "tool/publication.py": "95ac47ccfff9c3d9eae67276351dfce665aa0f6882a36fcc185e41dd5062093e",
     "tool/selector.html": "31ec49c50219e326cd59f1a34ffeedf400811b3fae9b57b7f27e78622e2ae533",
-    "tool/test_publication.py": "151abfbb2ebb028d3ef21a850b4fa98510c5dda3b7a6cebc20aae052dd7436b3",
+    "tool/test_publication.py": "e2d6d206cec477e8c0b1f65f7354d257f8f8b786819d7cbda305ffae7fadc461",
     "tool/unity.sh": "e5c3845fdba06341a7ff5ec1a5c3d42364fb9859f11781b373d7b706ae896d75"
   },
   "schema": 1
