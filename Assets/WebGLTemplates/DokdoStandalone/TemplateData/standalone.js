@@ -67,6 +67,12 @@
     get("orientation-panel").hidden = !blocked;
     if (blocked) clear();
     const view = window.visualViewport;
+    const visibleWidth = view ? view.width : innerWidth;
+    const visibleHeight = view ? view.height : innerHeight;
+    app.style.setProperty("--panel-left", ((view ? view.offsetLeft : 0) + visibleWidth / 2) + "px");
+    app.style.setProperty("--panel-top", ((view ? view.offsetTop : 0) + visibleHeight / 2) + "px");
+    app.style.setProperty("--panel-width", (visibleWidth * .92) + "px");
+    app.style.setProperty("--panel-height", (visibleHeight * .9) + "px");
     const shell = get("game-shell");
     shell.style.left = (view ? view.offsetLeft : 0) + "px";
     shell.style.top = (view ? view.offsetTop : 0) + "px";

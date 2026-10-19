@@ -37,7 +37,9 @@ def run(args):
               HTMLElement.prototype.requestFullscreen = function(options) {
                 window.fullscreenRequest = {id:this.id, options};
                 return Promise.resolve("fullscreen-fixture");
-              };''')
+              };
+              window.testViewport = Object.assign(new EventTarget(), {width:720,height:1000,offsetLeft:0,offsetTop:0});
+              Object.defineProperty(window,"visualViewport",{value:testViewport});''')
             root=Path(__file__).resolve().parents[1]/'Assets/WebGLTemplates/DokdoStandalone'
             def route(request):
                 path=urlparse(request.request.url).path
@@ -78,6 +80,11 @@ def run(args):
             assert page.evaluate('masks.slice(-1)[0]')=='0'
             page.keyboard.up('KeyS');page.evaluate('dispatchEvent(new Event("focus"))')
             page.evaluate('dispatchEvent(new CustomEvent("dokdo-manual-paste"))')
+            page.evaluate('Object.assign(testViewport,{height:360,offsetTop:40});testViewport.dispatchEvent(new Event("resize"))')
+            bounds=page.locator('#clipboard-panel').bounding_box()
+            assert bounds['y']>=40 and bounds['y']+bounds['height']<=400
+            record['checks']['clipboard-follows-visible-keyboard-area']='passed'
+            page.evaluate('Object.assign(testViewport,{height:1000,offsetTop:0});testViewport.dispatchEvent(new Event("resize"))')
             page.locator('#clipboard-text').fill('WASD save text')
             page.keyboard.press('KeyW'); assert page.evaluate('masks.slice(-1)[0]')=='0'
             page.locator('#clipboard-text').fill('save-fixture')
