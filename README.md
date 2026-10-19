@@ -1,3 +1,24 @@
+# DOKDO standalone source and WebGL download
+
+This repository now includes **source-available standalone Unity source**
+derived from `dokdo-1.16.6-web9-r6`. Build instructions, provenance and the
+publication workflow are in [docs/publication](docs/publication/README.md).
+The standalone player keeps gameplay, local saves and clipboard transfer.
+It has no chat, emotes, shared sea, online counts or shared treasure events.
+See the [releases](https://github.com/ykondrashyn/dokdo.online/releases) for
+available artifacts; an unqualified local candidate is not a published release.
+
+The hosted online game remains at [dokdo.online](https://dokdo.online/).
+The player guide below describes that hosted version. Social features and
+public captain names are **hosted-only**; ordinary gameplay and save controls
+also apply to the standalone game. Its source has no blanket open-source
+license over recovered material; see [provenance](docs/publication/PROVENANCE.md).
+
+The existing Android APK is a separate historical artifact. No new Android
+build or reproducible source/APK pairing is claimed by this publication.
+
+---
+
 <div align="center">
 
 # ⚓ DOKDO Online: Play DOKDO Free in Your Browser
@@ -50,6 +71,8 @@ The original app is hard to find today, so **[dokdo.online](https://dokdo.online
 ---
 
 ## ✨ Features
+
+This table describes the hosted online game. Shared sea, chat and emotes are hosted-only.
 
 | | Feature | Details |
 |---|---|---|
@@ -153,6 +176,8 @@ Full guide: **[dokdo.online/guide](https://dokdo.online/guide/?ref=github)**
 ---
 
 ## 🤖 Android APK
+
+Historical `v1.16.6-r1` artifact, separate from the standalone WebGL build.
 
 Prefer an app? The Android build is attached to the release:
 

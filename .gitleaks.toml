@@ -1,0 +1,10 @@
+title = "DOKDO publication scan"
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Reviewed SHA-256 inventory entries, not API credentials"
+condition = "AND"
+paths = ['''docs/publication/(export-allowlist|source-inventory)\.json$''']
+regexTarget = "line"
+regexes = ['''"Assets/Dokdo/Web/Core/IBrowserKeyValueStore\.cs(\.meta)?": "[0-9a-f]{64}",?$''']
