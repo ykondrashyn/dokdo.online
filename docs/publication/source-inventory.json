@@ -197,7 +197,7 @@
     "Assets/Dokdo/Web/Editor.meta": "bc6fe670a84395a716c9416b58b986c8f2a18281728894be53d42f0fbeb46d32",
     "Assets/Dokdo/Web/Editor/Dokdo.Web.Editor.asmdef": "7ef7f75fa2e034771c495f8f830d6d37aac9f4ee181a89ba4e09d88f687aea00",
     "Assets/Dokdo/Web/Editor/Dokdo.Web.Editor.asmdef.meta": "ae2540f5b9815665ebaa4be24a481b8afad05749214dd41a9bb69321aed483a2",
-    "Assets/Dokdo/Web/Editor/StandaloneBuild.cs": "c7317a1aa22a289d5b6de0b244780dd135194cd47f5dfd9462475c511f90efe0",
+    "Assets/Dokdo/Web/Editor/StandaloneBuild.cs": "2810089402f6f1ea8c087dda3c5fec5d22f202fcfb5c16a228684d9d02044c8f",
     "Assets/Dokdo/Web/Editor/StandaloneBuild.cs.meta": "5ec7cc3a837c714c1ab8d4e40d06aa81322d58555566082dc8de71809e26b256",
     "Assets/Dokdo/Web/Editor/WebAudioBuildAssets.cs": "9253a481e8ebe2cad31b756c0b36f9198b3eeeecf7833d7f44ade62d7f02ec23",
     "Assets/Dokdo/Web/Editor/WebAudioBuildAssets.cs.meta": "18605a99ba080763f6eeca5b4e77e19f4f3b647ea397f54d45d02533f941bfd7",
@@ -1906,9 +1906,9 @@
     "screenshots/dokdo-war-memorial-seoul.jpg": "068312bf53ab991be4ac7d205e63a071fffdd3e55e19add1362dbd2ed17557bb",
     "tool/browser_check.py": "2b8abc20742f23b09187bae58b8d2f937d608dca4b75f7932f29cb59d9b61bd4",
     "tool/export-source.py": "441c608b311d6bd2ebe5e8f9a20c09b38fbf8222eebbe996a9745bd2211b8b27",
-    "tool/publication.py": "0a6a7f5dac4495c26798ccfb1dc39e64a049287073a05b526e9d8c717e4d25a6",
+    "tool/publication.py": "a5d33201d26f9ffb65ce79cf196ccc217c463a2160f98e6986cdb729be7ca132",
     "tool/selector.html": "31ec49c50219e326cd59f1a34ffeedf400811b3fae9b57b7f27e78622e2ae533",
-    "tool/test_publication.py": "d71c6184acdd40b6ab1fd655ab0c207a268d05bab1cd37698c87c38cab8b7ebe",
+    "tool/test_publication.py": "5a2d6a5078f0dc96a05357baf9ed1bad8ecc1266e0fb3348af63492f59152900",
     "tool/unity.sh": "e5c3845fdba06341a7ff5ec1a5c3d42364fb9859f11781b373d7b706ae896d75"
   },
   "schema": 1

@@ -8,6 +8,20 @@ import zipfile
 import publication as p
 
 class PublicationTests(unittest.TestCase):
+    def test_player_rejects_duplicate_texture_variants(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp); (root/'index.html').write_text('selector')
+            for variant in ['Desktop','Mobile']:
+                for name in ['index.html','Build/ab.data','Build/ab.wasm',
+                             'Build/ab.loader.js','Build/ab.framework.js',
+                             'TemplateData/standalone.css','TemplateData/standalone.js']:
+                    path=root/variant/name; path.parent.mkdir(parents=True,exist_ok=True)
+                    path.write_text('fixture')
+            with self.assertRaisesRegex(ValueError,'Texture variants are identical'):
+                p.payload_hashes(root)
+            (root/'Mobile/Build/ab.data').write_text('different texture payload')
+            self.assertEqual(len(p.payload_hashes(root)),15)
+
     def test_player_rejects_embedded_user_directories(self):
         for value in ['/home/fixture/Unity/file.cpp', '/Users/fixture/Unity/file.cpp',
                       'C:\\Users\\fixture\\Unity\\file.cpp']:

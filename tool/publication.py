@@ -170,7 +170,11 @@ def payload_hashes(root):
         subset=[n for n in names if n.startswith(variant+'/')]
         require(len(subset) == 7, 'Incomplete player: '+variant)
     require('index.html' in names, 'Missing capability selector')
-    return file_hashes(root, sorted(names), validate_player)
+    hashes = file_hashes(root, sorted(names), validate_player)
+    textures = [next(hashes[n] for n in names if n.startswith(v+'/Build/') and n.endswith('.data'))
+                for v in ['Desktop', 'Mobile']]
+    require(textures[0] != textures[1], 'Texture variants are identical; verify DXT and ASTC subtargets')
+    return hashes
 
 def acceptance(path, files):
     data=json.loads(path.read_text())

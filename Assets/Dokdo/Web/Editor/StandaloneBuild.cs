@@ -82,6 +82,7 @@ namespace Dokdo.Web.Editor
             if (Directory.Exists(output)) Directory.Delete(output, true);
             var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions {
                 scenes = SceneIds.BuildPaths.ToArray(), target = BuildTarget.WebGL,
+                subtarget = (int)textures,
                 locationPathName = output, options = BuildOptions.NoUniqueIdentifier
             });
             if (report.summary.result != BuildResult.Succeeded || report.summary.totalErrors != 0)
