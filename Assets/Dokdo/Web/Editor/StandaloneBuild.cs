@@ -60,7 +60,7 @@ namespace Dokdo.Web.Editor
             foreach (LogType kind in Enum.GetValues(typeof(LogType)))
                 PlayerSettings.SetStackTraceLogType(kind, StackTraceLogType.None);
             EditorUserBuildSettings.webGLBuildSubtarget = textures;
-            EditorUserBuildSettings.SetPlatformSettings("WebGL", "CodeOptimization", "DiskSizeLTO");
+            EditorUserBuildSettings.SetPlatformSettings("WebGL", "CodeOptimization", "DiskSize");
             EditorUserBuildSettings.development = false;
             EditorUserBuildSettings.connectProfiler = false;
             WebAudioBuildAssets.EnsureImported();

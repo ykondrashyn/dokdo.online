@@ -40,6 +40,9 @@ not work. Clipboard APIs require a secure context; manual copy/paste remains
 available on ordinary HTTP. Saves belong to the browser origin; transfer a
 save before changing origins or clearing browser storage.
 
+The build uses size optimization without link-time optimization to keep
+build memory requirements manageable on ordinary development machines.
+
 For browser bridge checks and a real-player startup/network smoke, install
 Playwright in your own Python environment, install its Chromium and Firefox
 browsers, and run:
