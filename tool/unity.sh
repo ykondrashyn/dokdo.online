@@ -11,6 +11,7 @@ case "$mode" in
   test) args+=(-runTests -testPlatform EditMode -testResults "$root/.artifacts/editmode.xml") ;;
   desktop) args+=(-executeMethod Dokdo.Web.Editor.StandaloneBuild.Desktop -quit) ;;
   mobile) args+=(-executeMethod Dokdo.Web.Editor.StandaloneBuild.Mobile -quit) ;;
+  report) args+=(-executeMethod Dokdo.Web.Editor.StandaloneBuild.InspectReport -quit) ;;
   *) echo 'Usage: tool/unity.sh compile|test|desktop|mobile' >&2; exit 2 ;;
 esac
 "$UNITY_EDITOR" "${args[@]}"
@@ -22,6 +23,8 @@ if mode == 'test':
     result = ET.parse('.artifacts/editmode.xml').getroot()
     assert result.get('result') == 'Passed' and int(result.get('passed', '0')) > 0, 'Unity tests did not pass'
     print('Unity EditMode:', result.attrib)
+elif mode == 'report':
+    print('\n'.join(line for line in log.splitlines() if 'DOKDO_BUILD_REPORT' in line))
 else:
     marker = 'DOKDO_STANDALONE_COMPILE_OK' if mode == 'compile' else 'DOKDO_STANDALONE_BUILD_OK ' + mode.capitalize()
     assert marker in log, 'Unity did not report successful completion; inspect .artifacts/' + mode + '.log'

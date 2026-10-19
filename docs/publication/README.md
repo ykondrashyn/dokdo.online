@@ -64,6 +64,7 @@ requires a complete acceptance record:
 ```sh
 python3 tool/publication.py package --acceptance /path/outside/git/acceptance.json
 python3 tool/publication.py verify --directory Builds/Release
+python3 tool/publication.py verify-source --archive /path/to/downloaded-source.tar.gz
 ```
 
 The manifest records the exact public build commit, original source tag and

@@ -23,6 +23,9 @@ Standalone changes remove online runtime services and the browser social UI,
 replace commercial compatibility dependencies, clear cloud/signing settings,
 and supply public build and verification tools. Normal persistence and its
 receipt fields remain compatible with the pinned reconstruction.
+Four obsolete Unity GUI Layer components are removed from the recovered
+cameras; Unity 6 no longer supports them. Asset and gameplay script GUIDs
+remain intact. The standalone project has a separate local product identity.
 
 ## Anti-cheat compatibility
 

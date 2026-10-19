@@ -21123,7 +21123,6 @@ GameObject:
   - component: {fileID: 8297}
   - component: {fileID: 13235}
   - component: {fileID: 20481}
-  - component: {fileID: 20428}
   m_Layer: 0
   m_Name: WorldMapCamera
   m_TagString: Untagged
@@ -54041,7 +54040,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9927}
   - component: {fileID: 13237}
-  - component: {fileID: 20429}
   - component: {fileID: 20482}
   - component: {fileID: 20261}
   - component: {fileID: 25725}
@@ -76361,7 +76359,6 @@ GameObject:
   - component: {fileID: 11010}
   - component: {fileID: 13238}
   - component: {fileID: 20483}
-  - component: {fileID: 20430}
   m_Layer: 0
   m_Name: minimapCam
   m_TagString: Untagged
@@ -351411,27 +351408,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!92 &20428
-GUILayer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1269}
-  m_Enabled: 0
---- !u!92 &20429
-GUILayer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 3241}
-  m_Enabled: 1
---- !u!92 &20430
-GUILayer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 4575}
-  m_Enabled: 0
 --- !u!95 &20431
 Animator:
   serializedVersion: 3

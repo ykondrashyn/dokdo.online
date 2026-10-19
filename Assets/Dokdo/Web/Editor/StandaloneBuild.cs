@@ -15,6 +15,17 @@ namespace Dokdo.Web.Editor
         public static void Compile() => Debug.Log("DOKDO_STANDALONE_COMPILE_OK");
         public static void Desktop() => Build("Desktop", WebGLTextureSubtarget.DXT);
         public static void Mobile() => Build("Mobile", WebGLTextureSubtarget.ASTC);
+        public static void InspectReport()
+        {
+            var report = BuildReport.GetLatestReport();
+            if (report == null) throw new InvalidOperationException("No saved build report");
+            Debug.Log("DOKDO_BUILD_REPORT result=" + report.summary.result +
+                " errors=" + report.summary.totalErrors + " warnings=" + report.summary.totalWarnings);
+            foreach (var step in report.steps)
+                foreach (var message in step.messages)
+                    if (message.type == LogType.Error || message.type == LogType.Exception)
+                        Debug.Log("DOKDO_BUILD_REPORT_DETAIL " + step.name + ": " + message.content);
+        }
         private static void Build(string name, WebGLTextureSubtarget textures)
         {
             var web = NamedBuildTarget.WebGL;
@@ -49,6 +60,7 @@ namespace Dokdo.Web.Editor
             foreach (LogType kind in Enum.GetValues(typeof(LogType)))
                 PlayerSettings.SetStackTraceLogType(kind, StackTraceLogType.None);
             EditorUserBuildSettings.webGLBuildSubtarget = textures;
+            EditorUserBuildSettings.SetPlatformSettings("WebGL", "CodeOptimization", "DiskSizeLTO");
             EditorUserBuildSettings.development = false;
             EditorUserBuildSettings.connectProfiler = false;
             WebAudioBuildAssets.EnsureImported();
@@ -62,7 +74,10 @@ namespace Dokdo.Web.Editor
                 locationPathName = output, options = BuildOptions.NoUniqueIdentifier
             });
             if (report.summary.result != BuildResult.Succeeded || report.summary.totalErrors != 0)
+            {
+                InspectReport();
                 throw new InvalidOperationException("Standalone build failed: " + report.summary.result);
+            }
             Debug.Log("DOKDO_STANDALONE_BUILD_OK " + name);
         }
     }

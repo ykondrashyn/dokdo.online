@@ -60,6 +60,20 @@ class PublicationTests(unittest.TestCase):
             (root/'extra.txt').unlink(); (root/'player.zip').write_bytes(b'changed')
             with self.assertRaises(ValueError): p.verify(root)
 
+    def test_source_archive_rejects_missing_changed_and_extra_members(self):
+        for change in ['valid','missing','changed','extra']:
+            with tempfile.TemporaryDirectory() as tmp:
+                root=Path(tmp); p.write_json(root/p.INVENTORY,{'files':{'README.md':p.sha(b'readme')}})
+                archive=root/'source.zip'
+                with zipfile.ZipFile(archive,'w') as z:
+                    z.writestr('source/'+p.INVENTORY,(root/p.INVENTORY).read_bytes())
+                    if change!='missing':z.writestr('source/README.md',b'changed' if change=='changed' else b'readme')
+                    if change=='extra':z.writestr('source/extra.txt',b'extra')
+                with patch.object(p,'ROOT',root):
+                    if change=='valid':p.verify_source(archive)
+                    else:
+                        with self.assertRaises(ValueError):p.verify_source(archive)
+
     def test_zip_rejects_symlink_and_unexpected_member(self):
         for link in [False, True]:
             with tempfile.TemporaryDirectory() as temp:

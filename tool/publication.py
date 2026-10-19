@@ -10,6 +10,7 @@ import shutil
 import stat
 import subprocess
 import tempfile
+import tarfile
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -168,7 +169,10 @@ def package(acceptance_path=None):
         'public_build_commit':build_record['build_commit'], 'publication_commit':git('rev-parse','HEAD'),
         'unity_version':UNITY, 'status':'accepted' if accepted else 'unqualified-review',
         'files':files, 'artifacts':{zip_path.name:sha(zip_path.read_bytes())},
-        'validation':accepted or {'compile':'passed','editmode':'passed','browser_acceptance':'pending'}}
+        'build_input_trees':build_record['trees'],
+        'source_inventory_sha256':sha((ROOT/INVENTORY).read_bytes()),
+        'validation':{'compile':build_record['compile'],'editmode':build_record['editmode'],
+                      'browser_acceptance':accepted or 'pending'}}
     write_json(directory/'publication.json',manifest)
     (directory/'SHA256SUMS').write_text(''.join(sha(p.read_bytes())+'  '+p.name+'\n' for p in [zip_path,directory/'publication.json']))
     verify(directory)
@@ -201,17 +205,49 @@ def verify(directory):
                 require(sha(blob) == manifest['files'][item.filename], 'ZIP checksum mismatch')
     print('Release inventory and checksums: passed')
 
+def verify_source(archive_path):
+    expected=json.loads((ROOT/INVENTORY).read_text())['files']
+    expected=dict(expected, **{INVENTORY:sha((ROOT/INVENTORY).read_bytes())})
+    actual={}; archive_root=None
+    def consume(name, size, data):
+        nonlocal archive_root
+        path=safe_name(name)
+        require(len(path.parts)>1, 'Missing source archive root')
+        if archive_root is None:archive_root=path.parts[0]
+        require(path.parts[0]==archive_root, 'Multiple source archive roots')
+        relative=PurePosixPath(*path.parts[1:]).as_posix()
+        require(relative not in actual and relative in expected, 'Unexpected or duplicate source member: '+relative)
+        require(size<=100*1024*1024, 'Oversized source member')
+        actual[relative]=sha(data())
+    if zipfile.is_zipfile(archive_path):
+        with zipfile.ZipFile(archive_path) as archive:
+            for item in archive.infolist():
+                if item.is_dir():continue
+                require(stat.S_IFMT(item.external_attr>>16) in (0,stat.S_IFREG), 'Source archive link')
+                consume(item.filename,item.file_size,lambda:archive.read(item))
+    else:
+        with tarfile.open(archive_path) as archive:
+            for item in archive:
+                if item.isdir():continue
+                require(item.isfile(), 'Source archive link')
+                consume(item.name,item.size,lambda:archive.extractfile(item).read())
+    require(actual==expected, 'Source archive differs from approved inventory')
+    print('Source archive matches approved inventory')
+
 if __name__ == '__main__':
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command', choices=['inventory','audit','secrets','build','candidate','package','verify'])
+    parser.add_argument('command', choices=['inventory','audit','secrets','build','candidate','package','verify','verify-source'])
     parser.add_argument('--acceptance', type=Path)
     parser.add_argument('--directory', type=Path)
+    parser.add_argument('--archive', type=Path)
     args=parser.parse_args()
     try:
         if args.command == 'package':
             require(args.acceptance is not None, 'Release packaging requires --acceptance FILE'); package(args.acceptance)
         elif args.command == 'candidate': package()
         elif args.command == 'verify': verify(args.directory or ROOT/'Builds/Release')
+        elif args.command == 'verify-source':
+            require(args.archive is not None, 'Source verification requires --archive FILE');verify_source(args.archive)
         else: globals()[args.command]()
     except (ValueError, OSError, subprocess.CalledProcessError) as error:
         parser.exit(1, str(error)+'\n')

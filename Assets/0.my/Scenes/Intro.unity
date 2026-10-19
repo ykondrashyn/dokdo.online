@@ -433,7 +433,6 @@ GameObject:
   m_Component:
   - component: {fileID: 33}
   - component: {fileID: 35}
-  - component: {fileID: 43}
   - component: {fileID: 46}
   - component: {fileID: 40}
   m_Layer: 0
@@ -894,13 +893,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!92 &43
-GUILayer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 23}
-  m_Enabled: 1
 --- !u!108 &45
 Light:
   serializedVersion: 8
