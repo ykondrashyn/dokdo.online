@@ -15,6 +15,9 @@ This Unity version uses **NDK r27c (27.2.12479018)**, **OpenJDK 17**, and
 that platform using the SDK manager if necessary and accept the SDK licenses
 locally. See Unity's [setup instructions][setup] and [dependency versions][versions].
 
+Allow at least **8 GiB of free disk space after installing the tools** for
+the first build's imported assets, native compilation and Gradle downloads.
+
 Clone the `standalone-publication` branch, not the older default branch.
 For the command-line workflow, install Python 3.10+, Git and Bash. Use
 project/editor paths without spaces, commas or double quotes. This restriction
@@ -75,6 +78,7 @@ the full recorded workflow, use the command above. Unity's normal
 | Minimum / target Android API | 25 / 36 |
 | Graphics / texture compression | OpenGL ES 3 / ETC2 |
 | Orientation | Portrait |
+| Android application category | Game |
 | Scenes, in order | `load`, `Intro`, `Main` under `Assets/0.my/Scenes` |
 | Output format | APK, no split expansion file or App Bundle |
 | Signing | Local debug key; custom keystore disabled |

@@ -38,6 +38,7 @@ namespace Dokdo.Web.Editor
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel25;
             PlayerSettings.Android.targetSdkVersion = AndroidSdkVersions.AndroidApiLevel36;
             PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;
+            PlayerSettings.Android.appCategory = "game";
             PlayerSettings.SetScriptingBackend(android, ScriptingImplementation.IL2CPP);
             PlayerSettings.SetApiCompatibilityLevel(android, ApiCompatibilityLevel.NET_Standard);
             PlayerSettings.SetManagedStrippingLevel(android, ManagedStrippingLevel.Low);
@@ -80,7 +81,8 @@ namespace Dokdo.Web.Editor
             if (report.summary.result != BuildResult.Succeeded || report.summary.totalErrors != 0)
             {
                 StandaloneBuild.InspectReport();
-                throw new InvalidOperationException("Android build failed: " + report.summary.result);
+                throw new InvalidOperationException("Android build result=" + report.summary.result +
+                    "; errors=" + report.summary.totalErrors);
             }
             Debug.Log("DOKDO_STANDALONE_BUILD_OK Android");
         }

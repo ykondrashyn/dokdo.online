@@ -71,7 +71,7 @@ Shader "Cartoon FX/Alpha Blended + Additive Soft"
                 output.texcoord = TRANSFORM_TEX(input.texcoord, _MainTex);
                 #ifdef SOFTPARTICLES_ON
                 output.projectedPosition = ComputeScreenPos(output.vertex);
-                COMPUTE_EYEDEPTH(output.projectedPosition.z);
+                output.projectedPosition.z = -UnityObjectToViewPos(input.vertex).z;
                 #endif
                 UNITY_TRANSFER_FOG(output, output.vertex);
                 return output;
